@@ -1,0 +1,16 @@
+2026-01-30 21:07:44,731 - main - INFO - === Logging system initialized ===
+2026-01-30 21:07:44,731 - main - INFO - Log file: logs/app_20260130_210744.log
+2026-01-30 21:07:44,731 - main - INFO - Log level: INFO
+2026-01-30 21:07:44,731 - main - INFO - Timestamp: 20260130_210744
+2026-01-30 21:07:45,594 - main - INFO - Included router: routers.aihub.router
+2026-01-30 21:07:45,626 - main - WARNING - Failed to import module 'routers.auth': No module named 'dependencies'
+2026-01-30 21:07:45,642 - main - INFO - Included router: routers.health.router
+2026-01-30 21:07:45,762 - main - INFO - Included router: routers.products.router
+2026-01-30 21:07:45,786 - main - WARNING - Failed to import module 'routers.settings': No module named 'dependencies'
+2026-01-30 21:07:45,810 - main - WARNING - Failed to import module 'routers.storage': No module named 'dependencies'
+2026-01-30 21:07:45,834 - main - WARNING - Failed to import module 'routers.user': No module named 'dependencies'
+2026-01-30 21:07:45,834 - main - INFO - === Application startup initiated ===
+2026-01-30 21:07:45,834 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-01-30 21:07:45,834 - services.database - INFO - 🔧 Starting database initialization...
+2026-01-30 21:07:45,834 - core.database - INFO - Starting database initialization...
+2026-01-30 21:07:45,834 - services.database - ERROR - Failed to initialize database: 'Settings' object has no attribute 'database_url'

@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "name": "Classic White T-Shirt",
+        "description": "Premium cotton t-shirt with a comfortable fit",
+        "price": 29.99,
+        "category": "T-Shirts",
+        "image_url": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500",
+        "stock": 100,
+        "created_at": "2026-01-25 06:00:00"
+    },
+    {
+        "id": 2,
+        "name": "Blue Denim Jeans",
+        "description": "Classic fit denim jeans with stretch comfort",
+        "price": 79.99,
+        "category": "Jeans",
+        "image_url": "https://images.unsplash.com/photo-1542272604-787c3835535d?w=500",
+        "stock": 75,
+        "created_at": "2026-01-25 06:00:00"
+    },
+    {
+        "id": 3,
+        "name": "Black Hoodie",
+        "description": "Warm and cozy hoodie perfect for casual wear",
+        "price": 59.99,
+        "category": "Hoodies",
+        "image_url": "https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=500",
+        "stock": 50,
+        "created_at": "2026-01-25 06:00:00"
+    },
+    {
+        "id": 4,
+        "name": "Summer Dress",
+        "description": "Light and breezy summer dress",
+        "price": 69.99,
+        "category": "Dresses",
+        "image_url": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=500",
+        "stock": 60,
+        "created_at": "2026-01-25 06:00:00"
+    },
+    {
+        "id": 5,
+        "name": "Leather Jacket",
+        "description": "Genuine leather jacket with modern style",
+        "price": 199.99,
+        "category": "Jackets",
+        "image_url": "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=500",
+        "stock": 30,
+        "created_at": "2026-01-25 06:00:00"
+    },
+    {
+        "id": 6,
+        "name": "Striped Polo Shirt",
+        "description": "Classic polo shirt with stripes",
+        "price": 39.99,
+        "category": "T-Shirts",
+        "image_url": "https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?w=500",
+        "stock": 80,
+        "created_at": "2026-01-25 06:00:00"
+    },
+    {
+        "id": 7,
+        "name": "Cargo Pants",
+        "description": "Comfortable cargo pants with multiple pockets",
+        "price": 69.99,
+        "category": "Pants",
+        "image_url": "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=500",
+        "stock": 65,
+        "created_at": "2026-01-25 06:00:00"
+    },
+    {
+        "id": 8,
+        "name": "Wool Sweater",
+        "description": "Warm wool sweater for cold weather",
+        "price": 89.99,
+        "category": "Sweaters",
+        "image_url": "https://images.unsplash.com/photo-1576566588028-4147f3842f27?w=500",
+        "stock": 45,
+        "created_at": "2026-01-25 06:00:00"
+    }
+]

@@ -1,0 +1,36 @@
+2026-01-30 21:40:51,059 - main - INFO - === Logging system initialized ===
+2026-01-30 21:40:51,059 - main - INFO - Log file: logs/app_20260130_214051.log
+2026-01-30 21:40:51,059 - main - INFO - Log level: INFO
+2026-01-30 21:40:51,059 - main - INFO - Timestamp: 20260130_214051
+2026-01-30 21:40:51,608 - main - INFO - Included router: routers.aihub.router
+2026-01-30 21:40:51,664 - main - INFO - Included router: routers.auth.router
+2026-01-30 21:40:51,664 - main - INFO - Included router: routers.health.router
+2026-01-30 21:40:51,720 - main - INFO - Included router: routers.products.router
+2026-01-30 21:40:51,728 - main - WARNING - Failed to import module 'routers.settings': cannot import name 'get_admin_user' from 'dependencies.auth' (D:\ASM1\backend\dependencies\auth.py)
+2026-01-30 21:40:51,728 - main - WARNING - Failed to import module 'routers.storage': cannot import name 'get_admin_user' from 'dependencies.auth' (D:\ASM1\backend\dependencies\auth.py)
+2026-01-30 21:40:51,752 - main - INFO - Included router: routers.user.router
+2026-01-30 21:40:51,752 - main - INFO - === Application startup initiated ===
+2026-01-30 21:40:51,752 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-01-30 21:40:51,752 - services.database - INFO - 🔧 Starting database initialization...
+2026-01-30 21:40:51,752 - core.database - INFO - Starting database initialization...
+2026-01-30 21:40:51,752 - core.database - INFO - Normalizing database URL for async compatibility...
+2026-01-30 21:40:51,752 - core.database - ERROR - Database not found:./test.db
+2026-01-30 21:40:51,752 - core.database - WARNING - Adjusted database URL driver for async compatibility
+2026-01-30 21:40:51,752 - core.database - INFO - Creating async database engine...
+2026-01-30 21:40:51,752 - core.database - INFO - Using QueuePool with connection pooling for non-Lambda environment
+2026-01-30 21:40:51,775 - core.database - ERROR - Failed to initialize database: Invalid argument(s) 'pool_size','max_overflow','pool_timeout' sent to create_engine(), using configuration SQLiteDialect_aiosqlite/NullPool/Engine.  Please check that the keyword arguments are appropriate for this combination of components.
+Traceback (most recent call last):
+  File "D:\ASM1\backend\core\database.py", line 132, in init_db
+    self.engine = create_async_engine(database_url, **engine_kwargs)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\.venv\Lib\site-packages\sqlalchemy\ext\asyncio\engine.py", line 120, in create_async_engine
+    sync_engine = _create_engine(url, **kw)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 2, in create_engine
+  File "D:\ASM1\.venv\Lib\site-packages\sqlalchemy\util\deprecations.py", line 281, in warned
+    return fn(*args, **kwargs)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\.venv\Lib\site-packages\sqlalchemy\engine\create.py", line 697, in create_engine
+    raise TypeError(
+TypeError: Invalid argument(s) 'pool_size','max_overflow','pool_timeout' sent to create_engine(), using configuration SQLiteDialect_aiosqlite/NullPool/Engine.  Please check that the keyword arguments are appropriate for this combination of components.
+2026-01-30 21:40:51,783 - services.database - ERROR - Failed to initialize database: Invalid argument(s) 'pool_size','max_overflow','pool_timeout' sent to create_engine(), using configuration SQLiteDialect_aiosqlite/NullPool/Engine.  Please check that the keyword arguments are appropriate for this combination of components.

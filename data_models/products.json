@@ -1,0 +1,53 @@
+{
+    "title": "products",
+    "type": "object",
+    "properties": {
+        "id": {
+            "type": "integer",
+            "description": "Primary key, auto-increment"
+        },
+        "name": {
+            "type": "string",
+            "description": "Product name"
+        },
+        "description": {
+            "type": "string",
+            "description": "Product description"
+        },
+        "price": {
+            "type": "number",
+            "description": "Product price"
+        },
+        "image": {
+            "type": "string",
+            "description": "Product image URL"
+        },
+        "category": {
+            "type": "string",
+            "description": "Product category: men, women, accessories"
+        },
+        "size": {
+            "type": "string",
+            "description": "Available sizes: XS, S, M, L, XL, XXL"
+        },
+        "color": {
+            "type": "string",
+            "description": "Product color"
+        },
+        "stock": {
+            "type": "integer",
+            "description": "Stock quantity"
+        },
+        "created_at": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Creation timestamp"
+        }
+    },
+    "required": [
+        "id",
+        "name",
+        "description",
+        "price"
+    ]
+}
