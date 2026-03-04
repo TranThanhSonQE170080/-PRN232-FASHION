@@ -1,0 +1,1023 @@
+2026-03-03 17:46:11,876 - main - INFO - === Logging system initialized ===
+2026-03-03 17:46:11,876 - main - INFO - Log file: logs/app_20260303_174611.log
+2026-03-03 17:46:11,876 - main - INFO - Log level: INFO
+2026-03-03 17:46:11,876 - main - INFO - Timestamp: 20260303_174611
+2026-03-03 17:46:12,325 - main - INFO - Included router: routers.aihub.router
+2026-03-03 17:46:12,345 - main - INFO - Included router: routers.auth.router
+2026-03-03 17:46:12,345 - main - INFO - Included router: routers.health.router
+2026-03-03 17:46:12,355 - main - INFO - Included router: routers.orders.router
+2026-03-03 17:46:12,405 - main - INFO - Included router: routers.products.router
+2026-03-03 17:46:12,405 - main - WARNING - Failed to import module 'routers.settings': cannot import name 'get_admin_user' from 'dependencies.auth' (D:\ASM1\backend\dependencies\auth.py)
+2026-03-03 17:46:12,415 - main - WARNING - Failed to import module 'routers.storage': cannot import name 'get_admin_user' from 'dependencies.auth' (D:\ASM1\backend\dependencies\auth.py)
+2026-03-03 17:46:12,425 - main - INFO - Included router: routers.user.router
+2026-03-03 17:46:12,425 - main - INFO - === Application startup initiated ===
+2026-03-03 17:46:12,425 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-03-03 17:46:12,425 - services.database - INFO - 🔧 Starting database initialization...
+2026-03-03 17:46:12,425 - core.database - INFO - Starting database initialization...
+2026-03-03 17:46:12,425 - core.database - INFO - Normalizing database URL for async compatibility...
+2026-03-03 17:46:12,425 - core.database - ERROR - Database not found:./test.db
+2026-03-03 17:46:12,425 - core.database - WARNING - Adjusted database URL driver for async compatibility
+2026-03-03 17:46:12,425 - core.database - INFO - Creating async database engine...
+2026-03-03 17:46:12,425 - core.database - INFO - Using NullPool for sqlite+aiosqlite environment
+2026-03-03 17:46:12,445 - core.database - INFO - Database engine created successfully
+2026-03-03 17:46:12,445 - core.database - INFO - Creating async session maker...
+2026-03-03 17:46:12,445 - core.database - INFO - Async session maker created successfully
+2026-03-03 17:46:12,445 - core.database - INFO - Database connection initialized successfully
+2026-03-03 17:46:12,445 - services.database - INFO - 🔧 Database connection initialized, now creating tables if tables not exist...
+2026-03-03 17:46:12,445 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-03-03 17:46:12,445 - core.database - INFO - 🔧 Starting table creation...
+2026-03-03 17:46:12,445 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x0000022B49980400>
+2026-03-03 17:46:12,445 - aiosqlite - DEBUG - operation <function connect.<locals>.connector at 0x0000022B49980400> completed
+2026-03-03 17:46:12,455 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B49974F40>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x0000022B4995F6A0>, deterministic=True)
+2026-03-03 17:46:12,455 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B49974F40>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x0000022B4995F6A0>, deterministic=True) completed
+2026-03-03 17:46:12,455 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B49974F40>, 'floor', 1, <built-in function floor>, deterministic=True)
+2026-03-03 17:46:12,455 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B49974F40>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2026-03-03 17:46:12,455 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49974F40>)
+2026-03-03 17:46:12,455 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49974F40>) completed
+2026-03-03 17:46:12,455 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B499847C0>, 'PRAGMA read_uncommitted', [])
+2026-03-03 17:46:12,455 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B499847C0>, 'PRAGMA read_uncommitted', []) completed
+2026-03-03 17:46:12,455 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B499847C0>)
+2026-03-03 17:46:12,455 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B499847C0>) completed
+2026-03-03 17:46:12,455 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B499847C0>)
+2026-03-03 17:46:12,455 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B499847C0>) completed
+2026-03-03 17:46:12,455 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B49974F40>)
+2026-03-03 17:46:12,455 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B49974F40>) completed
+2026-03-03 17:46:12,455 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49974F40>)
+2026-03-03 17:46:12,455 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49974F40>) completed
+2026-03-03 17:46:12,455 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B499848C0>, 'PRAGMA main.table_info("users")', ())
+2026-03-03 17:46:12,455 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B499848C0>, 'PRAGMA main.table_info("users")', ()) completed
+2026-03-03 17:46:12,464 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B499848C0>)
+2026-03-03 17:46:12,464 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B499848C0>) completed
+2026-03-03 17:46:12,464 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B499848C0>)
+2026-03-03 17:46:12,464 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B499848C0>) completed
+2026-03-03 17:46:12,464 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49974F40>)
+2026-03-03 17:46:12,464 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49974F40>) completed
+2026-03-03 17:46:12,464 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49900740>, 'PRAGMA temp.table_info("users")', ())
+2026-03-03 17:46:12,464 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49900740>, 'PRAGMA temp.table_info("users")', ()) completed
+2026-03-03 17:46:12,464 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B49900740>)
+2026-03-03 17:46:12,464 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B49900740>) completed
+2026-03-03 17:46:12,464 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49900740>)
+2026-03-03 17:46:12,464 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49900740>) completed
+2026-03-03 17:46:12,464 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49974F40>)
+2026-03-03 17:46:12,464 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49974F40>) completed
+2026-03-03 17:46:12,472 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49900740>, 'PRAGMA main.table_info("oidc_states")', ())
+2026-03-03 17:46:12,472 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49900740>, 'PRAGMA main.table_info("oidc_states")', ()) completed
+2026-03-03 17:46:12,472 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B49900740>)
+2026-03-03 17:46:12,472 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B49900740>) completed
+2026-03-03 17:46:12,472 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49900740>)
+2026-03-03 17:46:12,472 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49900740>) completed
+2026-03-03 17:46:12,472 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49974F40>)
+2026-03-03 17:46:12,472 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49974F40>) completed
+2026-03-03 17:46:12,472 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49900740>, 'PRAGMA temp.table_info("oidc_states")', ())
+2026-03-03 17:46:12,472 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49900740>, 'PRAGMA temp.table_info("oidc_states")', ()) completed
+2026-03-03 17:46:12,472 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B49900740>)
+2026-03-03 17:46:12,472 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B49900740>) completed
+2026-03-03 17:46:12,472 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49900740>)
+2026-03-03 17:46:12,472 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49900740>) completed
+2026-03-03 17:46:12,472 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49974F40>)
+2026-03-03 17:46:12,472 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49974F40>) completed
+2026-03-03 17:46:12,472 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49900740>, 'PRAGMA main.table_info("orders")', ())
+2026-03-03 17:46:12,472 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49900740>, 'PRAGMA main.table_info("orders")', ()) completed
+2026-03-03 17:46:12,480 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B49900740>)
+2026-03-03 17:46:12,480 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B49900740>) completed
+2026-03-03 17:46:12,480 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49900740>)
+2026-03-03 17:46:12,480 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49900740>) completed
+2026-03-03 17:46:12,480 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49974F40>)
+2026-03-03 17:46:12,480 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49974F40>) completed
+2026-03-03 17:46:12,480 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49900740>, 'PRAGMA temp.table_info("orders")', ())
+2026-03-03 17:46:12,480 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49900740>, 'PRAGMA temp.table_info("orders")', ()) completed
+2026-03-03 17:46:12,480 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B49900740>)
+2026-03-03 17:46:12,480 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B49900740>) completed
+2026-03-03 17:46:12,480 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49900740>)
+2026-03-03 17:46:12,480 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49900740>) completed
+2026-03-03 17:46:12,480 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49974F40>)
+2026-03-03 17:46:12,480 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49974F40>) completed
+2026-03-03 17:46:12,480 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49900740>, 'PRAGMA main.table_info("products")', ())
+2026-03-03 17:46:12,480 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49900740>, 'PRAGMA main.table_info("products")', ()) completed
+2026-03-03 17:46:12,488 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B49900740>)
+2026-03-03 17:46:12,488 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B49900740>) completed
+2026-03-03 17:46:12,488 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49900740>)
+2026-03-03 17:46:12,488 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49900740>) completed
+2026-03-03 17:46:12,488 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49974F40>)
+2026-03-03 17:46:12,488 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49974F40>) completed
+2026-03-03 17:46:12,488 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49900740>, 'PRAGMA temp.table_info("products")', ())
+2026-03-03 17:46:12,488 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49900740>, 'PRAGMA temp.table_info("products")', ()) completed
+2026-03-03 17:46:12,488 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B49900740>)
+2026-03-03 17:46:12,488 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B49900740>) completed
+2026-03-03 17:46:12,488 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49900740>)
+2026-03-03 17:46:12,488 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49900740>) completed
+2026-03-03 17:46:12,488 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49974F40>)
+2026-03-03 17:46:12,488 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49974F40>) completed
+2026-03-03 17:46:12,488 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49900740>, '\nCREATE TABLE users (\n\tid VARCHAR(255) NOT NULL, \n\temail VARCHAR(255) NOT NULL, \n\tname VARCHAR(255), \n\trole VARCHAR(50) NOT NULL, \n\tcreated_at DATETIME DEFAULT (CURRENT_TIMESTAMP), \n\tlast_login DATETIME, \n\thashed_password VARCHAR(255), \n\tPRIMARY KEY (id)\n)\n\n', ())
+2026-03-03 17:46:12,496 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49900740>, '\nCREATE TABLE users (\n\tid VARCHAR(255) NOT NULL, \n\temail VARCHAR(255) NOT NULL, \n\tname VARCHAR(255), \n\trole VARCHAR(50) NOT NULL, \n\tcreated_at DATETIME DEFAULT (CURRENT_TIMESTAMP), \n\tlast_login DATETIME, \n\thashed_password VARCHAR(255), \n\tPRIMARY KEY (id)\n)\n\n', ()) completed
+2026-03-03 17:46:12,496 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49900740>)
+2026-03-03 17:46:12,504 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49900740>) completed
+2026-03-03 17:46:12,504 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49974F40>)
+2026-03-03 17:46:12,504 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49974F40>) completed
+2026-03-03 17:46:12,504 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49900740>, 'CREATE INDEX ix_users_id ON users (id)', ())
+2026-03-03 17:46:12,504 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49900740>, 'CREATE INDEX ix_users_id ON users (id)', ()) completed
+2026-03-03 17:46:12,504 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49900740>)
+2026-03-03 17:46:12,504 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49900740>) completed
+2026-03-03 17:46:12,504 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49974F40>)
+2026-03-03 17:46:12,504 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49974F40>) completed
+2026-03-03 17:46:12,504 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49900740>, '\nCREATE TABLE oidc_states (\n\tid INTEGER NOT NULL, \n\tstate VARCHAR(255) NOT NULL, \n\tnonce VARCHAR(255) NOT NULL, \n\tcode_verifier VARCHAR(255) NOT NULL, \n\texpires_at DATETIME NOT NULL, \n\tcreated_at DATETIME DEFAULT (CURRENT_TIMESTAMP), \n\tPRIMARY KEY (id)\n)\n\n', ())
+2026-03-03 17:46:12,515 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49900740>, '\nCREATE TABLE oidc_states (\n\tid INTEGER NOT NULL, \n\tstate VARCHAR(255) NOT NULL, \n\tnonce VARCHAR(255) NOT NULL, \n\tcode_verifier VARCHAR(255) NOT NULL, \n\texpires_at DATETIME NOT NULL, \n\tcreated_at DATETIME DEFAULT (CURRENT_TIMESTAMP), \n\tPRIMARY KEY (id)\n)\n\n', ()) completed
+2026-03-03 17:46:12,515 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49900740>)
+2026-03-03 17:46:12,515 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49900740>) completed
+2026-03-03 17:46:12,515 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49974F40>)
+2026-03-03 17:46:12,515 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49974F40>) completed
+2026-03-03 17:46:12,515 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49900740>, 'CREATE UNIQUE INDEX ix_oidc_states_state ON oidc_states (state)', ())
+2026-03-03 17:46:12,525 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49900740>, 'CREATE UNIQUE INDEX ix_oidc_states_state ON oidc_states (state)', ()) completed
+2026-03-03 17:46:12,525 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49900740>)
+2026-03-03 17:46:12,525 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49900740>) completed
+2026-03-03 17:46:12,525 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49974F40>)
+2026-03-03 17:46:12,525 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49974F40>) completed
+2026-03-03 17:46:12,525 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49900740>, 'CREATE INDEX ix_oidc_states_id ON oidc_states (id)', ())
+2026-03-03 17:46:12,525 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49900740>, 'CREATE INDEX ix_oidc_states_id ON oidc_states (id)', ()) completed
+2026-03-03 17:46:12,535 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49900740>)
+2026-03-03 17:46:12,535 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49900740>) completed
+2026-03-03 17:46:12,535 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49974F40>)
+2026-03-03 17:46:12,535 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49974F40>) completed
+2026-03-03 17:46:12,535 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49900740>, '\nCREATE TABLE products (\n\tid INTEGER NOT NULL, \n\tname VARCHAR NOT NULL, \n\tdescription VARCHAR NOT NULL, \n\tprice FLOAT NOT NULL, \n\timage VARCHAR, \n\tcategory VARCHAR, \n\tsize VARCHAR, \n\tcolor VARCHAR, \n\tstock INTEGER, \n\tcreated_at DATETIME, \n\tPRIMARY KEY (id)\n)\n\n', ())
+2026-03-03 17:46:12,535 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49900740>, '\nCREATE TABLE products (\n\tid INTEGER NOT NULL, \n\tname VARCHAR NOT NULL, \n\tdescription VARCHAR NOT NULL, \n\tprice FLOAT NOT NULL, \n\timage VARCHAR, \n\tcategory VARCHAR, \n\tsize VARCHAR, \n\tcolor VARCHAR, \n\tstock INTEGER, \n\tcreated_at DATETIME, \n\tPRIMARY KEY (id)\n)\n\n', ()) completed
+2026-03-03 17:46:12,545 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49900740>)
+2026-03-03 17:46:12,545 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49900740>) completed
+2026-03-03 17:46:12,545 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49974F40>)
+2026-03-03 17:46:12,545 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49974F40>) completed
+2026-03-03 17:46:12,545 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49900740>, 'CREATE INDEX ix_products_id ON products (id)', ())
+2026-03-03 17:46:12,545 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49900740>, 'CREATE INDEX ix_products_id ON products (id)', ()) completed
+2026-03-03 17:46:12,545 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49900740>)
+2026-03-03 17:46:12,545 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49900740>) completed
+2026-03-03 17:46:12,554 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49974F40>)
+2026-03-03 17:46:12,554 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49974F40>) completed
+2026-03-03 17:46:12,554 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49900740>, '\nCREATE TABLE orders (\n\tid INTEGER NOT NULL, \n\tuser_id VARCHAR(255) NOT NULL, \n\tcustomer_name VARCHAR(255) NOT NULL, \n\tphone VARCHAR(50) NOT NULL, \n\taddress VARCHAR(500) NOT NULL, \n\ttotal_amount FLOAT NOT NULL, \n\tproducts JSON NOT NULL, \n\tstatus VARCHAR(50), \n\tcreated_at DATETIME DEFAULT (CURRENT_TIMESTAMP), \n\tPRIMARY KEY (id), \n\tFOREIGN KEY(user_id) REFERENCES users (id)\n)\n\n', ())
+2026-03-03 17:46:12,560 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49900740>, '\nCREATE TABLE orders (\n\tid INTEGER NOT NULL, \n\tuser_id VARCHAR(255) NOT NULL, \n\tcustomer_name VARCHAR(255) NOT NULL, \n\tphone VARCHAR(50) NOT NULL, \n\taddress VARCHAR(500) NOT NULL, \n\ttotal_amount FLOAT NOT NULL, \n\tproducts JSON NOT NULL, \n\tstatus VARCHAR(50), \n\tcreated_at DATETIME DEFAULT (CURRENT_TIMESTAMP), \n\tPRIMARY KEY (id), \n\tFOREIGN KEY(user_id) REFERENCES users (id)\n)\n\n', ()) completed
+2026-03-03 17:46:12,560 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49900740>)
+2026-03-03 17:46:12,560 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49900740>) completed
+2026-03-03 17:46:12,560 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49974F40>)
+2026-03-03 17:46:12,560 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49974F40>) completed
+2026-03-03 17:46:12,565 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49900740>, 'CREATE INDEX ix_orders_id ON orders (id)', ())
+2026-03-03 17:46:12,565 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49900740>, 'CREATE INDEX ix_orders_id ON orders (id)', ()) completed
+2026-03-03 17:46:12,565 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49900740>)
+2026-03-03 17:46:12,565 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49900740>) completed
+2026-03-03 17:46:12,565 - core.database - INFO - Tables initialized successfully
+2026-03-03 17:46:12,565 - core.database - DEBUG - [DB_OP] Create tables completed in 0.1197s
+2026-03-03 17:46:12,565 - aiosqlite - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x0000022B49974F40>)
+2026-03-03 17:46:12,565 - aiosqlite - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x0000022B49974F40>) completed
+2026-03-03 17:46:12,565 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B49974F40>)
+2026-03-03 17:46:12,574 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B49974F40>) completed
+2026-03-03 17:46:12,574 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x0000022B49974F40>)
+2026-03-03 17:46:12,574 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x0000022B49974F40>) completed
+2026-03-03 17:46:12,574 - services.database - INFO - 🔧 Table creation completed
+2026-03-03 17:46:12,574 - services.database - INFO - Database initialized successfully
+2026-03-03 17:46:12,574 - services.database - DEBUG - [DB_OP] Database initialization completed in 0.1491s
+2026-03-03 17:46:12,574 - services.mock_data - INFO - Processing mock data file products.json for table products
+2026-03-03 17:46:12,574 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x0000022B499804A0>
+2026-03-03 17:46:12,574 - aiosqlite - DEBUG - operation <function connect.<locals>.connector at 0x0000022B499804A0> completed
+2026-03-03 17:46:12,582 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B49975030>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x0000022B4995F6A0>, deterministic=True)
+2026-03-03 17:46:12,582 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B49975030>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x0000022B4995F6A0>, deterministic=True) completed
+2026-03-03 17:46:12,582 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B49975030>, 'floor', 1, <built-in function floor>, deterministic=True)
+2026-03-03 17:46:12,582 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B49975030>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2026-03-03 17:46:12,582 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49975030>)
+2026-03-03 17:46:12,582 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49975030>) completed
+2026-03-03 17:46:12,582 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B499872C0>, 'PRAGMA main.table_xinfo("products")', ())
+2026-03-03 17:46:12,582 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B499872C0>, 'PRAGMA main.table_xinfo("products")', ()) completed
+2026-03-03 17:46:12,582 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B499872C0>)
+2026-03-03 17:46:12,582 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B499872C0>) completed
+2026-03-03 17:46:12,582 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B499872C0>)
+2026-03-03 17:46:12,582 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B499872C0>) completed
+2026-03-03 17:46:12,591 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49975030>)
+2026-03-03 17:46:12,591 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49975030>) completed
+2026-03-03 17:46:12,591 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B499872C0>, "SELECT sql FROM  (SELECT * FROM sqlite_master UNION ALL   SELECT * FROM sqlite_temp_master) WHERE name = ? AND type in ('table', 'view')", ('products',))
+2026-03-03 17:46:12,591 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B499872C0>, "SELECT sql FROM  (SELECT * FROM sqlite_master UNION ALL   SELECT * FROM sqlite_temp_master) WHERE name = ? AND type in ('table', 'view')", ('products',)) completed
+2026-03-03 17:46:12,591 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B499872C0>)
+2026-03-03 17:46:12,591 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B499872C0>) completed
+2026-03-03 17:46:12,595 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B499872C0>)
+2026-03-03 17:46:12,595 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B499872C0>) completed
+2026-03-03 17:46:12,595 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49975030>)
+2026-03-03 17:46:12,595 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49975030>) completed
+2026-03-03 17:46:12,595 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B499872C0>, 'PRAGMA main.foreign_key_list("products")', ())
+2026-03-03 17:46:12,595 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B499872C0>, 'PRAGMA main.foreign_key_list("products")', ()) completed
+2026-03-03 17:46:12,595 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B499872C0>)
+2026-03-03 17:46:12,595 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B499872C0>) completed
+2026-03-03 17:46:12,595 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B499872C0>)
+2026-03-03 17:46:12,595 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B499872C0>) completed
+2026-03-03 17:46:12,595 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49975030>)
+2026-03-03 17:46:12,595 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49975030>) completed
+2026-03-03 17:46:12,595 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B499872C0>, 'PRAGMA temp.foreign_key_list("products")', ())
+2026-03-03 17:46:12,595 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B499872C0>, 'PRAGMA temp.foreign_key_list("products")', ()) completed
+2026-03-03 17:46:12,595 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B499872C0>)
+2026-03-03 17:46:12,595 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B499872C0>) completed
+2026-03-03 17:46:12,595 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B499872C0>)
+2026-03-03 17:46:12,595 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B499872C0>) completed
+2026-03-03 17:46:12,595 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49975030>)
+2026-03-03 17:46:12,595 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49975030>) completed
+2026-03-03 17:46:12,595 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B499872C0>, "SELECT sql FROM  (SELECT * FROM sqlite_master UNION ALL   SELECT * FROM sqlite_temp_master) WHERE name = ? AND type in ('table', 'view')", ('products',))
+2026-03-03 17:46:12,595 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B499872C0>, "SELECT sql FROM  (SELECT * FROM sqlite_master UNION ALL   SELECT * FROM sqlite_temp_master) WHERE name = ? AND type in ('table', 'view')", ('products',)) completed
+2026-03-03 17:46:12,605 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B499872C0>)
+2026-03-03 17:46:12,605 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B499872C0>) completed
+2026-03-03 17:46:12,605 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B499872C0>)
+2026-03-03 17:46:12,605 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B499872C0>) completed
+2026-03-03 17:46:12,605 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49975030>)
+2026-03-03 17:46:12,605 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49975030>) completed
+2026-03-03 17:46:12,605 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B499872C0>, 'PRAGMA main.index_list("products")', ())
+2026-03-03 17:46:12,605 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B499872C0>, 'PRAGMA main.index_list("products")', ()) completed
+2026-03-03 17:46:12,605 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B499872C0>)
+2026-03-03 17:46:12,605 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B499872C0>) completed
+2026-03-03 17:46:12,605 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B499872C0>)
+2026-03-03 17:46:12,605 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B499872C0>) completed
+2026-03-03 17:46:12,605 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49975030>)
+2026-03-03 17:46:12,605 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49975030>) completed
+2026-03-03 17:46:12,614 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B499872C0>, 'PRAGMA main.index_info("ix_products_id")', ())
+2026-03-03 17:46:12,614 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B499872C0>, 'PRAGMA main.index_info("ix_products_id")', ()) completed
+2026-03-03 17:46:12,614 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B499872C0>)
+2026-03-03 17:46:12,614 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B499872C0>) completed
+2026-03-03 17:46:12,614 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B499872C0>)
+2026-03-03 17:46:12,614 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B499872C0>) completed
+2026-03-03 17:46:12,614 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49975030>)
+2026-03-03 17:46:12,614 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49975030>) completed
+2026-03-03 17:46:12,614 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B499872C0>, 'PRAGMA main.index_list("products")', ())
+2026-03-03 17:46:12,614 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B499872C0>, 'PRAGMA main.index_list("products")', ()) completed
+2026-03-03 17:46:12,614 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B499872C0>)
+2026-03-03 17:46:12,614 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B499872C0>) completed
+2026-03-03 17:46:12,614 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B499872C0>)
+2026-03-03 17:46:12,614 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B499872C0>) completed
+2026-03-03 17:46:12,614 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49975030>)
+2026-03-03 17:46:12,614 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49975030>) completed
+2026-03-03 17:46:12,614 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B499872C0>, 'PRAGMA main.index_info("ix_products_id")', ())
+2026-03-03 17:46:12,623 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B499872C0>, 'PRAGMA main.index_info("ix_products_id")', ()) completed
+2026-03-03 17:46:12,624 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B499872C0>)
+2026-03-03 17:46:12,624 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B499872C0>) completed
+2026-03-03 17:46:12,625 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B499872C0>)
+2026-03-03 17:46:12,625 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B499872C0>) completed
+2026-03-03 17:46:12,625 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49975030>)
+2026-03-03 17:46:12,625 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49975030>) completed
+2026-03-03 17:46:12,625 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B499872C0>, "SELECT sql FROM  (SELECT * FROM sqlite_master UNION ALL   SELECT * FROM sqlite_temp_master) WHERE name = ? AND type in ('table', 'view')", ('products',))
+2026-03-03 17:46:12,625 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B499872C0>, "SELECT sql FROM  (SELECT * FROM sqlite_master UNION ALL   SELECT * FROM sqlite_temp_master) WHERE name = ? AND type in ('table', 'view')", ('products',)) completed
+2026-03-03 17:46:12,625 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B499872C0>)
+2026-03-03 17:46:12,625 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B499872C0>) completed
+2026-03-03 17:46:12,625 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B499872C0>)
+2026-03-03 17:46:12,625 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B499872C0>) completed
+2026-03-03 17:46:12,635 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49975030>)
+2026-03-03 17:46:12,635 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49975030>) completed
+2026-03-03 17:46:12,635 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B499872C0>, 'SELECT count(*) AS count_1 \nFROM products', ())
+2026-03-03 17:46:12,635 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B499872C0>, 'SELECT count(*) AS count_1 \nFROM products', ()) completed
+2026-03-03 17:46:12,635 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B499872C0>)
+2026-03-03 17:46:12,635 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B499872C0>) completed
+2026-03-03 17:46:12,635 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B499872C0>)
+2026-03-03 17:46:12,635 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B499872C0>) completed
+2026-03-03 17:46:12,655 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49975030>)
+2026-03-03 17:46:12,655 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B49975030>) completed
+2026-03-03 17:46:12,655 - aiosqlite - DEBUG - executing functools.partial(<built-in method executemany of sqlite3.Cursor object at 0x0000022B49903E40>, 'INSERT INTO products (id, name, description, price, category, stock, created_at) VALUES (?, ?, ?, ?, ?, ?, ?)', [(1, 'Classic White T-Shirt', 'Premium cotton t-shirt with a comfortable fit', 29.99, 'T-Shirts', 100, '2026-01-25 06:00:00.000000'), (2, 'Blue Denim Jeans', 'Classic fit denim jeans with stretch comfort', 79.99, 'Jeans', 75, '2026-01-25 06:00:00.000000'), (3, 'Black Hoodie', 'Warm and cozy hoodie perfect for casual wear', 59.99, 'Hoodies', 50, '2026-01-25 06:00:00.000000'), (4, 'Summer Dress', 'Light and breezy summer dress', 69.99, 'Dresses', 60, '2026-01-25 06:00:00.000000'), (5, 'Leather Jacket', 'Genuine leather jacket with modern style', 199.99, 'Jackets', 30, '2026-01-25 06:00:00.000000'), (6, 'Striped Polo Shirt', 'Classic polo shirt with stripes', 39.99, 'T-Shirts', 80, '2026-01-25 06:00:00.000000'), (7, 'Cargo Pants', 'Comfortable cargo pants with multiple pockets', 69.99, 'Pants', 65, '2026-01-25 06:00:00.000000'), (8, 'Wool Sweater', 'Warm wool sweater for cold weather', 89.99, 'Sweaters', 45, '2026-01-25 06:00:00.000000')])
+2026-03-03 17:46:12,664 - aiosqlite - DEBUG - operation functools.partial(<built-in method executemany of sqlite3.Cursor object at 0x0000022B49903E40>, 'INSERT INTO products (id, name, description, price, category, stock, created_at) VALUES (?, ?, ?, ?, ?, ?, ?)', [(1, 'Classic White T-Shirt', 'Premium cotton t-shirt with a comfortable fit', 29.99, 'T-Shirts', 100, '2026-01-25 06:00:00.000000'), (2, 'Blue Denim Jeans', 'Classic fit denim jeans with stretch comfort', 79.99, 'Jeans', 75, '2026-01-25 06:00:00.000000'), (3, 'Black Hoodie', 'Warm and cozy hoodie perfect for casual wear', 59.99, 'Hoodies', 50, '2026-01-25 06:00:00.000000'), (4, 'Summer Dress', 'Light and breezy summer dress', 69.99, 'Dresses', 60, '2026-01-25 06:00:00.000000'), (5, 'Leather Jacket', 'Genuine leather jacket with modern style', 199.99, 'Jackets', 30, '2026-01-25 06:00:00.000000'), (6, 'Striped Polo Shirt', 'Classic polo shirt with stripes', 39.99, 'T-Shirts', 80, '2026-01-25 06:00:00.000000'), (7, 'Cargo Pants', 'Comfortable cargo pants with multiple pockets', 69.99, 'Pants', 65, '2026-01-25 06:00:00.000000'), (8, 'Wool Sweater', 'Warm wool sweater for cold weather', 89.99, 'Sweaters', 45, '2026-01-25 06:00:00.000000')]) completed
+2026-03-03 17:46:12,665 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49903E40>)
+2026-03-03 17:46:12,665 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49903E40>) completed
+2026-03-03 17:46:12,665 - services.mock_data - INFO - Inserted 8 mock records into products
+2026-03-03 17:46:12,665 - aiosqlite - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x0000022B49975030>)
+2026-03-03 17:46:12,665 - aiosqlite - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x0000022B49975030>) completed
+2026-03-03 17:46:12,665 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B49975030>)
+2026-03-03 17:46:12,665 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B49975030>) completed
+2026-03-03 17:46:12,665 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x0000022B49975030>)
+2026-03-03 17:46:12,665 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x0000022B49975030>) completed
+2026-03-03 17:46:12,665 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-03-03 17:46:12,674 - services.database - INFO - 🔧 Starting database initialization...
+2026-03-03 17:46:12,674 - core.database - INFO - Starting database initialization...
+2026-03-03 17:46:12,674 - core.database - INFO - Database already initialized
+2026-03-03 17:46:12,674 - services.database - INFO - 🔧 Database connection initialized, now creating tables if tables not exist...
+2026-03-03 17:46:12,674 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-03-03 17:46:12,674 - core.database - INFO - Tables already initialized
+2026-03-03 17:46:12,674 - services.database - INFO - 🔧 Table creation completed
+2026-03-03 17:46:12,674 - services.database - INFO - Database initialized successfully
+2026-03-03 17:46:12,674 - services.database - DEBUG - [DB_OP] Database initialization completed in 0.0093s
+2026-03-03 17:46:12,674 - services.auth - WARNING - Admin user ID or email not configured, skipping admin initialization
+2026-03-03 17:46:12,674 - main - INFO - === Application startup completed successfully ===
+2026-03-03 17:46:22,092 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-03-03 17:46:22,100 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0080s
+2026-03-03 17:46:22,100 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x0000022B49370CC0>
+2026-03-03 17:46:22,100 - aiosqlite - DEBUG - operation <function connect.<locals>.connector at 0x0000022B49370CC0> completed
+2026-03-03 17:46:22,100 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B4998F010>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x0000022B4995F6A0>, deterministic=True)
+2026-03-03 17:46:22,100 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B4998F010>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x0000022B4995F6A0>, deterministic=True) completed
+2026-03-03 17:46:22,108 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B4998F010>, 'floor', 1, <built-in function floor>, deterministic=True)
+2026-03-03 17:46:22,108 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B4998F010>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2026-03-03 17:46:22,116 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B4998F010>)
+2026-03-03 17:46:22,116 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B4998F010>) completed
+2026-03-03 17:46:22,116 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B499C4BC0>, 'SELECT users.id, users.email, users.name, users.role, users.created_at, users.last_login, users.hashed_password \nFROM users \nWHERE users.email = ?', ('admin@gmail.com',))
+2026-03-03 17:46:22,116 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B499C4BC0>, 'SELECT users.id, users.email, users.name, users.role, users.created_at, users.last_login, users.hashed_password \nFROM users \nWHERE users.email = ?', ('admin@gmail.com',)) completed
+2026-03-03 17:46:22,116 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B499C4BC0>)
+2026-03-03 17:46:22,116 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B499C4BC0>) completed
+2026-03-03 17:46:22,116 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B499C4BC0>)
+2026-03-03 17:46:22,116 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B499C4BC0>) completed
+2026-03-03 17:46:22,116 - core.database - ERROR - Database session error: 400: Lỗi Backend khi đăng nhập: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+Traceback (most recent call last):
+  File "D:\ASM1\backend\routers\auth.py", line 361, in login_password
+    raise HTTPException(status_code=401, detail="Email này chưa đăng ký. Vui lòng tạo tài khoản mới!")
+fastapi.exceptions.HTTPException: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ASM1\backend\core\database.py", line 542, in get_db
+    yield session
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\backend\routers\auth.py", line 380, in login_password
+    raise HTTPException(status_code=400, detail=f"Lỗi Backend khi đăng nhập: {str(e)}")
+fastapi.exceptions.HTTPException: 400: Lỗi Backend khi đăng nhập: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+2026-03-03 17:46:22,125 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.0332s
+2026-03-03 17:46:22,125 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B4998F010>)
+2026-03-03 17:46:22,125 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B4998F010>) completed
+2026-03-03 17:46:22,125 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B4998F010>)
+2026-03-03 17:46:22,125 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B4998F010>) completed
+2026-03-03 17:46:22,125 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x0000022B4998F010>)
+2026-03-03 17:46:22,125 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x0000022B4998F010>) completed
+2026-03-03 17:46:22,125 - core.database - ERROR - Failed to create database session: 400: Lỗi Backend khi đăng nhập: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+Traceback (most recent call last):
+  File "D:\ASM1\backend\routers\auth.py", line 361, in login_password
+    raise HTTPException(status_code=401, detail="Email này chưa đăng ký. Vui lòng tạo tài khoản mới!")
+fastapi.exceptions.HTTPException: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ASM1\backend\core\database.py", line 542, in get_db
+    yield session
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\backend\routers\auth.py", line 380, in login_password
+    raise HTTPException(status_code=400, detail=f"Lỗi Backend khi đăng nhập: {str(e)}")
+fastapi.exceptions.HTTPException: 400: Lỗi Backend khi đăng nhập: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+2026-03-03 17:46:31,384 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-03-03 17:46:31,384 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0000s
+2026-03-03 17:46:31,384 - routers.products - DEBUG - Querying productss: query=None, sort=None, skip=0, limit=1000, fields=None
+2026-03-03 17:46:31,396 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x0000022B49983920>
+2026-03-03 17:46:31,396 - aiosqlite - DEBUG - operation <function connect.<locals>.connector at 0x0000022B49983920> completed
+2026-03-03 17:46:31,396 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B499F48B0>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x0000022B4995F6A0>, deterministic=True)
+2026-03-03 17:46:31,396 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B499F48B0>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x0000022B4995F6A0>, deterministic=True) completed
+2026-03-03 17:46:31,396 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B499F48B0>, 'floor', 1, <built-in function floor>, deterministic=True)
+2026-03-03 17:46:31,396 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B499F48B0>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2026-03-03 17:46:31,401 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B499F48B0>)
+2026-03-03 17:46:31,401 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B499F48B0>) completed
+2026-03-03 17:46:31,401 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B499C4C40>, 'SELECT count(products.id) AS count_1 \nFROM products', ())
+2026-03-03 17:46:31,401 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B499C4C40>, 'SELECT count(products.id) AS count_1 \nFROM products', ()) completed
+2026-03-03 17:46:31,401 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B499C4C40>)
+2026-03-03 17:46:31,401 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B499C4C40>) completed
+2026-03-03 17:46:31,401 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B499C4C40>)
+2026-03-03 17:46:31,405 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B499C4C40>) completed
+2026-03-03 17:46:31,405 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B499F48B0>)
+2026-03-03 17:46:31,405 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B499F48B0>) completed
+2026-03-03 17:46:31,405 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49994EC0>, 'SELECT products.id, products.name, products.description, products.price, products.image, products.category, products.size, products.color, products.stock, products.created_at \nFROM products ORDER BY products.id DESC\n LIMIT ? OFFSET ?', (1000, 0))
+2026-03-03 17:46:31,405 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49994EC0>, 'SELECT products.id, products.name, products.description, products.price, products.image, products.category, products.size, products.color, products.stock, products.created_at \nFROM products ORDER BY products.id DESC\n LIMIT ? OFFSET ?', (1000, 0)) completed
+2026-03-03 17:46:31,405 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B49994EC0>)
+2026-03-03 17:46:31,405 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B49994EC0>) completed
+2026-03-03 17:46:31,405 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49994EC0>)
+2026-03-03 17:46:31,414 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49994EC0>) completed
+2026-03-03 17:46:31,414 - routers.products - DEBUG - Found 8 productss
+2026-03-03 17:46:31,414 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.0300s
+2026-03-03 17:46:31,414 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B499F48B0>)
+2026-03-03 17:46:31,414 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B499F48B0>) completed
+2026-03-03 17:46:31,414 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B499F48B0>)
+2026-03-03 17:46:31,414 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B499F48B0>) completed
+2026-03-03 17:46:31,414 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x0000022B499F48B0>)
+2026-03-03 17:46:31,414 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x0000022B499F48B0>) completed
+2026-03-03 17:46:41,535 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-03-03 17:46:41,535 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0000s
+2026-03-03 17:46:41,537 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x0000022B499C3560>
+2026-03-03 17:46:41,537 - aiosqlite - DEBUG - operation <function connect.<locals>.connector at 0x0000022B499C3560> completed
+2026-03-03 17:46:41,537 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B499F48B0>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x0000022B4995F6A0>, deterministic=True)
+2026-03-03 17:46:41,537 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B499F48B0>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x0000022B4995F6A0>, deterministic=True) completed
+2026-03-03 17:46:41,537 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B499F48B0>, 'floor', 1, <built-in function floor>, deterministic=True)
+2026-03-03 17:46:41,537 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B499F48B0>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2026-03-03 17:46:41,542 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B499F48B0>)
+2026-03-03 17:46:41,542 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B499F48B0>) completed
+2026-03-03 17:46:41,542 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49A1F840>, 'SELECT users.id, users.email, users.name, users.role, users.created_at, users.last_login, users.hashed_password \nFROM users \nWHERE users.email = ?', ('admin@gmail.com',))
+2026-03-03 17:46:41,542 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49A1F840>, 'SELECT users.id, users.email, users.name, users.role, users.created_at, users.last_login, users.hashed_password \nFROM users \nWHERE users.email = ?', ('admin@gmail.com',)) completed
+2026-03-03 17:46:41,545 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B49A1F840>)
+2026-03-03 17:46:41,545 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B49A1F840>) completed
+2026-03-03 17:46:41,545 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49A1F840>)
+2026-03-03 17:46:41,545 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49A1F840>) completed
+2026-03-03 17:46:41,545 - core.database - ERROR - Database session error: 400: Lỗi Backend khi đăng nhập: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+Traceback (most recent call last):
+  File "D:\ASM1\backend\routers\auth.py", line 361, in login_password
+    raise HTTPException(status_code=401, detail="Email này chưa đăng ký. Vui lòng tạo tài khoản mới!")
+fastapi.exceptions.HTTPException: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ASM1\backend\core\database.py", line 542, in get_db
+    yield session
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\backend\routers\auth.py", line 380, in login_password
+    raise HTTPException(status_code=400, detail=f"Lỗi Backend khi đăng nhập: {str(e)}")
+fastapi.exceptions.HTTPException: 400: Lỗi Backend khi đăng nhập: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+2026-03-03 17:46:41,545 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.0101s
+2026-03-03 17:46:41,545 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B499F48B0>)
+2026-03-03 17:46:41,545 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B499F48B0>) completed
+2026-03-03 17:46:41,545 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B499F48B0>)
+2026-03-03 17:46:41,545 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B499F48B0>) completed
+2026-03-03 17:46:41,545 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x0000022B499F48B0>)
+2026-03-03 17:46:41,545 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x0000022B499F48B0>) completed
+2026-03-03 17:46:41,545 - core.database - ERROR - Failed to create database session: 400: Lỗi Backend khi đăng nhập: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+Traceback (most recent call last):
+  File "D:\ASM1\backend\routers\auth.py", line 361, in login_password
+    raise HTTPException(status_code=401, detail="Email này chưa đăng ký. Vui lòng tạo tài khoản mới!")
+fastapi.exceptions.HTTPException: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ASM1\backend\core\database.py", line 542, in get_db
+    yield session
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\backend\routers\auth.py", line 380, in login_password
+    raise HTTPException(status_code=400, detail=f"Lỗi Backend khi đăng nhập: {str(e)}")
+fastapi.exceptions.HTTPException: 400: Lỗi Backend khi đăng nhập: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+2026-03-03 17:47:24,315 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-03-03 17:47:24,315 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0000s
+2026-03-03 17:47:24,320 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x0000022B49982480>
+2026-03-03 17:47:24,321 - aiosqlite - DEBUG - operation <function connect.<locals>.connector at 0x0000022B49982480> completed
+2026-03-03 17:47:24,321 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B499F46D0>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x0000022B4995F6A0>, deterministic=True)
+2026-03-03 17:47:24,321 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B499F46D0>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x0000022B4995F6A0>, deterministic=True) completed
+2026-03-03 17:47:24,321 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B499F46D0>, 'floor', 1, <built-in function floor>, deterministic=True)
+2026-03-03 17:47:24,321 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B499F46D0>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2026-03-03 17:47:24,325 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B499F46D0>)
+2026-03-03 17:47:24,325 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B499F46D0>) completed
+2026-03-03 17:47:24,325 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49A1DF40>, 'SELECT users.id, users.email, users.name, users.role, users.created_at, users.last_login, users.hashed_password \nFROM users \nWHERE users.email = ?', ('admin@gmail.com',))
+2026-03-03 17:47:24,325 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49A1DF40>, 'SELECT users.id, users.email, users.name, users.role, users.created_at, users.last_login, users.hashed_password \nFROM users \nWHERE users.email = ?', ('admin@gmail.com',)) completed
+2026-03-03 17:47:24,325 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B49A1DF40>)
+2026-03-03 17:47:24,325 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B49A1DF40>) completed
+2026-03-03 17:47:24,325 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49A1DF40>)
+2026-03-03 17:47:24,325 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49A1DF40>) completed
+2026-03-03 17:47:24,325 - core.database - ERROR - Database session error: 400: Lỗi Backend khi đăng nhập: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+Traceback (most recent call last):
+  File "D:\ASM1\backend\routers\auth.py", line 361, in login_password
+    raise HTTPException(status_code=401, detail="Email này chưa đăng ký. Vui lòng tạo tài khoản mới!")
+fastapi.exceptions.HTTPException: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ASM1\backend\core\database.py", line 542, in get_db
+    yield session
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\backend\routers\auth.py", line 380, in login_password
+    raise HTTPException(status_code=400, detail=f"Lỗi Backend khi đăng nhập: {str(e)}")
+fastapi.exceptions.HTTPException: 400: Lỗi Backend khi đăng nhập: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+2026-03-03 17:47:24,325 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.0106s
+2026-03-03 17:47:24,325 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B499F46D0>)
+2026-03-03 17:47:24,325 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B499F46D0>) completed
+2026-03-03 17:47:24,325 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B499F46D0>)
+2026-03-03 17:47:24,325 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B499F46D0>) completed
+2026-03-03 17:47:24,335 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x0000022B499F46D0>)
+2026-03-03 17:47:24,335 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x0000022B499F46D0>) completed
+2026-03-03 17:47:24,335 - core.database - ERROR - Failed to create database session: 400: Lỗi Backend khi đăng nhập: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+Traceback (most recent call last):
+  File "D:\ASM1\backend\routers\auth.py", line 361, in login_password
+    raise HTTPException(status_code=401, detail="Email này chưa đăng ký. Vui lòng tạo tài khoản mới!")
+fastapi.exceptions.HTTPException: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ASM1\backend\core\database.py", line 542, in get_db
+    yield session
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\backend\routers\auth.py", line 380, in login_password
+    raise HTTPException(status_code=400, detail=f"Lỗi Backend khi đăng nhập: {str(e)}")
+fastapi.exceptions.HTTPException: 400: Lỗi Backend khi đăng nhập: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+2026-03-03 18:16:00,512 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-03-03 18:16:00,512 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0000s
+2026-03-03 18:16:00,513 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x0000022B49370F40>
+2026-03-03 18:16:00,514 - aiosqlite - DEBUG - operation <function connect.<locals>.connector at 0x0000022B49370F40> completed
+2026-03-03 18:16:00,514 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B499F46D0>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x0000022B4995F6A0>, deterministic=True)
+2026-03-03 18:16:00,514 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B499F46D0>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x0000022B4995F6A0>, deterministic=True) completed
+2026-03-03 18:16:00,515 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B499F46D0>, 'floor', 1, <built-in function floor>, deterministic=True)
+2026-03-03 18:16:00,515 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B499F46D0>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2026-03-03 18:16:00,516 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B499F46D0>)
+2026-03-03 18:16:00,516 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B499F46D0>) completed
+2026-03-03 18:16:00,516 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49A1DF40>, 'SELECT users.id, users.email, users.name, users.role, users.created_at, users.last_login, users.hashed_password \nFROM users \nWHERE users.email = ?', ('admin@gmail.com',))
+2026-03-03 18:16:00,517 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49A1DF40>, 'SELECT users.id, users.email, users.name, users.role, users.created_at, users.last_login, users.hashed_password \nFROM users \nWHERE users.email = ?', ('admin@gmail.com',)) completed
+2026-03-03 18:16:00,517 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B49A1DF40>)
+2026-03-03 18:16:00,518 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B49A1DF40>) completed
+2026-03-03 18:16:00,518 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49A1DF40>)
+2026-03-03 18:16:00,518 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49A1DF40>) completed
+2026-03-03 18:16:00,518 - core.database - ERROR - Database session error: 400: Lỗi Backend khi đăng nhập: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+Traceback (most recent call last):
+  File "D:\ASM1\backend\routers\auth.py", line 361, in login_password
+    raise HTTPException(status_code=401, detail="Email này chưa đăng ký. Vui lòng tạo tài khoản mới!")
+fastapi.exceptions.HTTPException: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ASM1\backend\core\database.py", line 542, in get_db
+    yield session
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\backend\routers\auth.py", line 380, in login_password
+    raise HTTPException(status_code=400, detail=f"Lỗi Backend khi đăng nhập: {str(e)}")
+fastapi.exceptions.HTTPException: 400: Lỗi Backend khi đăng nhập: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+2026-03-03 18:16:00,520 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.0080s
+2026-03-03 18:16:00,520 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B499F46D0>)
+2026-03-03 18:16:00,521 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B499F46D0>) completed
+2026-03-03 18:16:00,521 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B499F46D0>)
+2026-03-03 18:16:00,521 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B499F46D0>) completed
+2026-03-03 18:16:00,522 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x0000022B499F46D0>)
+2026-03-03 18:16:00,522 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x0000022B499F46D0>) completed
+2026-03-03 18:16:00,523 - core.database - ERROR - Failed to create database session: 400: Lỗi Backend khi đăng nhập: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+Traceback (most recent call last):
+  File "D:\ASM1\backend\routers\auth.py", line 361, in login_password
+    raise HTTPException(status_code=401, detail="Email này chưa đăng ký. Vui lòng tạo tài khoản mới!")
+fastapi.exceptions.HTTPException: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ASM1\backend\core\database.py", line 542, in get_db
+    yield session
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\backend\routers\auth.py", line 380, in login_password
+    raise HTTPException(status_code=400, detail=f"Lỗi Backend khi đăng nhập: {str(e)}")
+fastapi.exceptions.HTTPException: 400: Lỗi Backend khi đăng nhập: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+2026-03-03 18:16:02,483 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-03-03 18:16:02,484 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0010s
+2026-03-03 18:16:02,484 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x0000022B49370EA0>
+2026-03-03 18:16:02,485 - aiosqlite - DEBUG - operation <function connect.<locals>.connector at 0x0000022B49370EA0> completed
+2026-03-03 18:16:02,485 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B4998F100>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x0000022B4995F6A0>, deterministic=True)
+2026-03-03 18:16:02,485 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B4998F100>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x0000022B4995F6A0>, deterministic=True) completed
+2026-03-03 18:16:02,486 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B4998F100>, 'floor', 1, <built-in function floor>, deterministic=True)
+2026-03-03 18:16:02,486 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B4998F100>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2026-03-03 18:16:02,487 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B4998F100>)
+2026-03-03 18:16:02,487 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B4998F100>) completed
+2026-03-03 18:16:02,487 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49A1FAC0>, 'SELECT users.id, users.email, users.name, users.role, users.created_at, users.last_login, users.hashed_password \nFROM users \nWHERE users.email = ?', ('admin@gmail.com',))
+2026-03-03 18:16:02,488 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49A1FAC0>, 'SELECT users.id, users.email, users.name, users.role, users.created_at, users.last_login, users.hashed_password \nFROM users \nWHERE users.email = ?', ('admin@gmail.com',)) completed
+2026-03-03 18:16:02,489 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B49A1FAC0>)
+2026-03-03 18:16:02,489 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B49A1FAC0>) completed
+2026-03-03 18:16:02,489 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49A1FAC0>)
+2026-03-03 18:16:02,490 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49A1FAC0>) completed
+2026-03-03 18:16:02,490 - core.database - ERROR - Database session error: 400: Lỗi Backend khi đăng nhập: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+Traceback (most recent call last):
+  File "D:\ASM1\backend\routers\auth.py", line 361, in login_password
+    raise HTTPException(status_code=401, detail="Email này chưa đăng ký. Vui lòng tạo tài khoản mới!")
+fastapi.exceptions.HTTPException: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ASM1\backend\core\database.py", line 542, in get_db
+    yield session
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\backend\routers\auth.py", line 380, in login_password
+    raise HTTPException(status_code=400, detail=f"Lỗi Backend khi đăng nhập: {str(e)}")
+fastapi.exceptions.HTTPException: 400: Lỗi Backend khi đăng nhập: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+2026-03-03 18:16:02,492 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.0090s
+2026-03-03 18:16:02,492 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B4998F100>)
+2026-03-03 18:16:02,492 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B4998F100>) completed
+2026-03-03 18:16:02,492 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B4998F100>)
+2026-03-03 18:16:02,493 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B4998F100>) completed
+2026-03-03 18:16:02,493 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x0000022B4998F100>)
+2026-03-03 18:16:02,493 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x0000022B4998F100>) completed
+2026-03-03 18:16:02,493 - core.database - ERROR - Failed to create database session: 400: Lỗi Backend khi đăng nhập: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+Traceback (most recent call last):
+  File "D:\ASM1\backend\routers\auth.py", line 361, in login_password
+    raise HTTPException(status_code=401, detail="Email này chưa đăng ký. Vui lòng tạo tài khoản mới!")
+fastapi.exceptions.HTTPException: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ASM1\backend\core\database.py", line 542, in get_db
+    yield session
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\backend\routers\auth.py", line 380, in login_password
+    raise HTTPException(status_code=400, detail=f"Lỗi Backend khi đăng nhập: {str(e)}")
+fastapi.exceptions.HTTPException: 400: Lỗi Backend khi đăng nhập: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+2026-03-03 18:16:02,709 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-03-03 18:16:02,709 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0000s
+2026-03-03 18:16:02,710 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x0000022B49A30720>
+2026-03-03 18:16:02,710 - aiosqlite - DEBUG - operation <function connect.<locals>.connector at 0x0000022B49A30720> completed
+2026-03-03 18:16:02,711 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B4998F100>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x0000022B4995F6A0>, deterministic=True)
+2026-03-03 18:16:02,711 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B4998F100>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x0000022B4995F6A0>, deterministic=True) completed
+2026-03-03 18:16:02,712 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B4998F100>, 'floor', 1, <built-in function floor>, deterministic=True)
+2026-03-03 18:16:02,712 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B4998F100>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2026-03-03 18:16:02,713 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B4998F100>)
+2026-03-03 18:16:02,713 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B4998F100>) completed
+2026-03-03 18:16:02,713 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49A1FAC0>, 'SELECT users.id, users.email, users.name, users.role, users.created_at, users.last_login, users.hashed_password \nFROM users \nWHERE users.email = ?', ('admin@gmail.com',))
+2026-03-03 18:16:02,714 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49A1FAC0>, 'SELECT users.id, users.email, users.name, users.role, users.created_at, users.last_login, users.hashed_password \nFROM users \nWHERE users.email = ?', ('admin@gmail.com',)) completed
+2026-03-03 18:16:02,714 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B49A1FAC0>)
+2026-03-03 18:16:02,714 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B49A1FAC0>) completed
+2026-03-03 18:16:02,715 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49A1FAC0>)
+2026-03-03 18:16:02,715 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49A1FAC0>) completed
+2026-03-03 18:16:02,715 - core.database - ERROR - Database session error: 400: Lỗi Backend khi đăng nhập: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+Traceback (most recent call last):
+  File "D:\ASM1\backend\routers\auth.py", line 361, in login_password
+    raise HTTPException(status_code=401, detail="Email này chưa đăng ký. Vui lòng tạo tài khoản mới!")
+fastapi.exceptions.HTTPException: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ASM1\backend\core\database.py", line 542, in get_db
+    yield session
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\backend\routers\auth.py", line 380, in login_password
+    raise HTTPException(status_code=400, detail=f"Lỗi Backend khi đăng nhập: {str(e)}")
+fastapi.exceptions.HTTPException: 400: Lỗi Backend khi đăng nhập: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+2026-03-03 18:16:02,717 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.0079s
+2026-03-03 18:16:02,718 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B4998F100>)
+2026-03-03 18:16:02,718 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B4998F100>) completed
+2026-03-03 18:16:02,718 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B4998F100>)
+2026-03-03 18:16:02,718 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B4998F100>) completed
+2026-03-03 18:16:02,718 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x0000022B4998F100>)
+2026-03-03 18:16:02,719 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x0000022B4998F100>) completed
+2026-03-03 18:16:02,719 - core.database - ERROR - Failed to create database session: 400: Lỗi Backend khi đăng nhập: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+Traceback (most recent call last):
+  File "D:\ASM1\backend\routers\auth.py", line 361, in login_password
+    raise HTTPException(status_code=401, detail="Email này chưa đăng ký. Vui lòng tạo tài khoản mới!")
+fastapi.exceptions.HTTPException: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ASM1\backend\core\database.py", line 542, in get_db
+    yield session
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\backend\routers\auth.py", line 380, in login_password
+    raise HTTPException(status_code=400, detail=f"Lỗi Backend khi đăng nhập: {str(e)}")
+fastapi.exceptions.HTTPException: 400: Lỗi Backend khi đăng nhập: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+2026-03-03 18:16:02,867 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-03-03 18:16:02,868 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0010s
+2026-03-03 18:16:02,868 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x0000022B49370D60>
+2026-03-03 18:16:02,869 - aiosqlite - DEBUG - operation <function connect.<locals>.connector at 0x0000022B49370D60> completed
+2026-03-03 18:16:02,869 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B4998FD30>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x0000022B4995F6A0>, deterministic=True)
+2026-03-03 18:16:02,870 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B4998FD30>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x0000022B4995F6A0>, deterministic=True) completed
+2026-03-03 18:16:02,870 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B4998FD30>, 'floor', 1, <built-in function floor>, deterministic=True)
+2026-03-03 18:16:02,870 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B4998FD30>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2026-03-03 18:16:02,871 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B4998FD30>)
+2026-03-03 18:16:02,872 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B4998FD30>) completed
+2026-03-03 18:16:02,872 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49A1FF40>, 'SELECT users.id, users.email, users.name, users.role, users.created_at, users.last_login, users.hashed_password \nFROM users \nWHERE users.email = ?', ('admin@gmail.com',))
+2026-03-03 18:16:02,872 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49A1FF40>, 'SELECT users.id, users.email, users.name, users.role, users.created_at, users.last_login, users.hashed_password \nFROM users \nWHERE users.email = ?', ('admin@gmail.com',)) completed
+2026-03-03 18:16:02,873 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B49A1FF40>)
+2026-03-03 18:16:02,873 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B49A1FF40>) completed
+2026-03-03 18:16:02,873 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49A1FF40>)
+2026-03-03 18:16:02,873 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49A1FF40>) completed
+2026-03-03 18:16:02,874 - core.database - ERROR - Database session error: 400: Lỗi Backend khi đăng nhập: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+Traceback (most recent call last):
+  File "D:\ASM1\backend\routers\auth.py", line 361, in login_password
+    raise HTTPException(status_code=401, detail="Email này chưa đăng ký. Vui lòng tạo tài khoản mới!")
+fastapi.exceptions.HTTPException: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ASM1\backend\core\database.py", line 542, in get_db
+    yield session
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\backend\routers\auth.py", line 380, in login_password
+    raise HTTPException(status_code=400, detail=f"Lỗi Backend khi đăng nhập: {str(e)}")
+fastapi.exceptions.HTTPException: 400: Lỗi Backend khi đăng nhập: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+2026-03-03 18:16:02,875 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.0075s
+2026-03-03 18:16:02,875 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B4998FD30>)
+2026-03-03 18:16:02,875 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B4998FD30>) completed
+2026-03-03 18:16:02,876 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B4998FD30>)
+2026-03-03 18:16:02,876 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B4998FD30>) completed
+2026-03-03 18:16:02,876 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x0000022B4998FD30>)
+2026-03-03 18:16:02,877 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x0000022B4998FD30>) completed
+2026-03-03 18:16:02,878 - core.database - ERROR - Failed to create database session: 400: Lỗi Backend khi đăng nhập: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+Traceback (most recent call last):
+  File "D:\ASM1\backend\routers\auth.py", line 361, in login_password
+    raise HTTPException(status_code=401, detail="Email này chưa đăng ký. Vui lòng tạo tài khoản mới!")
+fastapi.exceptions.HTTPException: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ASM1\backend\core\database.py", line 542, in get_db
+    yield session
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\backend\routers\auth.py", line 380, in login_password
+    raise HTTPException(status_code=400, detail=f"Lỗi Backend khi đăng nhập: {str(e)}")
+fastapi.exceptions.HTTPException: 400: Lỗi Backend khi đăng nhập: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+2026-03-03 18:16:03,012 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-03-03 18:16:03,012 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0000s
+2026-03-03 18:16:03,013 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x0000022B49370C20>
+2026-03-03 18:16:03,013 - aiosqlite - DEBUG - operation <function connect.<locals>.connector at 0x0000022B49370C20> completed
+2026-03-03 18:16:03,014 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B4998ED40>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x0000022B4995F6A0>, deterministic=True)
+2026-03-03 18:16:03,014 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B4998ED40>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x0000022B4995F6A0>, deterministic=True) completed
+2026-03-03 18:16:03,015 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B4998ED40>, 'floor', 1, <built-in function floor>, deterministic=True)
+2026-03-03 18:16:03,015 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B4998ED40>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2026-03-03 18:16:03,016 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B4998ED40>)
+2026-03-03 18:16:03,016 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B4998ED40>) completed
+2026-03-03 18:16:03,016 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49A1FEC0>, 'SELECT users.id, users.email, users.name, users.role, users.created_at, users.last_login, users.hashed_password \nFROM users \nWHERE users.email = ?', ('admin@gmail.com',))
+2026-03-03 18:16:03,017 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49A1FEC0>, 'SELECT users.id, users.email, users.name, users.role, users.created_at, users.last_login, users.hashed_password \nFROM users \nWHERE users.email = ?', ('admin@gmail.com',)) completed
+2026-03-03 18:16:03,017 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B49A1FEC0>)
+2026-03-03 18:16:03,017 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B49A1FEC0>) completed
+2026-03-03 18:16:03,018 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49A1FEC0>)
+2026-03-03 18:16:03,018 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49A1FEC0>) completed
+2026-03-03 18:16:03,018 - core.database - ERROR - Database session error: 400: Lỗi Backend khi đăng nhập: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+Traceback (most recent call last):
+  File "D:\ASM1\backend\routers\auth.py", line 361, in login_password
+    raise HTTPException(status_code=401, detail="Email này chưa đăng ký. Vui lòng tạo tài khoản mới!")
+fastapi.exceptions.HTTPException: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ASM1\backend\core\database.py", line 542, in get_db
+    yield session
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\backend\routers\auth.py", line 380, in login_password
+    raise HTTPException(status_code=400, detail=f"Lỗi Backend khi đăng nhập: {str(e)}")
+fastapi.exceptions.HTTPException: 400: Lỗi Backend khi đăng nhập: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+2026-03-03 18:16:03,020 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.0080s
+2026-03-03 18:16:03,020 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B4998ED40>)
+2026-03-03 18:16:03,020 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B4998ED40>) completed
+2026-03-03 18:16:03,020 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B4998ED40>)
+2026-03-03 18:16:03,021 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B4998ED40>) completed
+2026-03-03 18:16:03,021 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x0000022B4998ED40>)
+2026-03-03 18:16:03,021 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x0000022B4998ED40>) completed
+2026-03-03 18:16:03,021 - core.database - ERROR - Failed to create database session: 400: Lỗi Backend khi đăng nhập: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+Traceback (most recent call last):
+  File "D:\ASM1\backend\routers\auth.py", line 361, in login_password
+    raise HTTPException(status_code=401, detail="Email này chưa đăng ký. Vui lòng tạo tài khoản mới!")
+fastapi.exceptions.HTTPException: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ASM1\backend\core\database.py", line 542, in get_db
+    yield session
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\backend\routers\auth.py", line 380, in login_password
+    raise HTTPException(status_code=400, detail=f"Lỗi Backend khi đăng nhập: {str(e)}")
+fastapi.exceptions.HTTPException: 400: Lỗi Backend khi đăng nhập: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+2026-03-03 18:16:03,164 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-03-03 18:16:03,164 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0000s
+2026-03-03 18:16:03,165 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x0000022B43802DE0>
+2026-03-03 18:16:03,165 - aiosqlite - DEBUG - operation <function connect.<locals>.connector at 0x0000022B43802DE0> completed
+2026-03-03 18:16:03,165 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B4998F1F0>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x0000022B4995F6A0>, deterministic=True)
+2026-03-03 18:16:03,166 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B4998F1F0>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x0000022B4995F6A0>, deterministic=True) completed
+2026-03-03 18:16:03,166 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B4998F1F0>, 'floor', 1, <built-in function floor>, deterministic=True)
+2026-03-03 18:16:03,166 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B4998F1F0>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2026-03-03 18:16:03,167 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B4998F1F0>)
+2026-03-03 18:16:03,167 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B4998F1F0>) completed
+2026-03-03 18:16:03,167 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49A1F940>, 'SELECT users.id, users.email, users.name, users.role, users.created_at, users.last_login, users.hashed_password \nFROM users \nWHERE users.email = ?', ('admin@gmail.com',))
+2026-03-03 18:16:03,168 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49A1F940>, 'SELECT users.id, users.email, users.name, users.role, users.created_at, users.last_login, users.hashed_password \nFROM users \nWHERE users.email = ?', ('admin@gmail.com',)) completed
+2026-03-03 18:16:03,168 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B49A1F940>)
+2026-03-03 18:16:03,169 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B49A1F940>) completed
+2026-03-03 18:16:03,169 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49A1F940>)
+2026-03-03 18:16:03,169 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49A1F940>) completed
+2026-03-03 18:16:03,170 - core.database - ERROR - Database session error: 400: Lỗi Backend khi đăng nhập: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+Traceback (most recent call last):
+  File "D:\ASM1\backend\routers\auth.py", line 361, in login_password
+    raise HTTPException(status_code=401, detail="Email này chưa đăng ký. Vui lòng tạo tài khoản mới!")
+fastapi.exceptions.HTTPException: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ASM1\backend\core\database.py", line 542, in get_db
+    yield session
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\backend\routers\auth.py", line 380, in login_password
+    raise HTTPException(status_code=400, detail=f"Lỗi Backend khi đăng nhập: {str(e)}")
+fastapi.exceptions.HTTPException: 400: Lỗi Backend khi đăng nhập: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+2026-03-03 18:16:03,171 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.0070s
+2026-03-03 18:16:03,171 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B4998F1F0>)
+2026-03-03 18:16:03,172 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B4998F1F0>) completed
+2026-03-03 18:16:03,172 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B4998F1F0>)
+2026-03-03 18:16:03,172 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B4998F1F0>) completed
+2026-03-03 18:16:03,172 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x0000022B4998F1F0>)
+2026-03-03 18:16:03,172 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x0000022B4998F1F0>) completed
+2026-03-03 18:16:03,173 - core.database - ERROR - Failed to create database session: 400: Lỗi Backend khi đăng nhập: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+Traceback (most recent call last):
+  File "D:\ASM1\backend\routers\auth.py", line 361, in login_password
+    raise HTTPException(status_code=401, detail="Email này chưa đăng ký. Vui lòng tạo tài khoản mới!")
+fastapi.exceptions.HTTPException: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ASM1\backend\core\database.py", line 542, in get_db
+    yield session
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\backend\routers\auth.py", line 380, in login_password
+    raise HTTPException(status_code=400, detail=f"Lỗi Backend khi đăng nhập: {str(e)}")
+fastapi.exceptions.HTTPException: 400: Lỗi Backend khi đăng nhập: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+2026-03-03 18:16:03,301 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-03-03 18:16:03,301 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0000s
+2026-03-03 18:16:03,302 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x0000022B499C1080>
+2026-03-03 18:16:03,302 - aiosqlite - DEBUG - operation <function connect.<locals>.connector at 0x0000022B499C1080> completed
+2026-03-03 18:16:03,303 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B4998F010>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x0000022B4995F6A0>, deterministic=True)
+2026-03-03 18:16:03,303 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B4998F010>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x0000022B4995F6A0>, deterministic=True) completed
+2026-03-03 18:16:03,304 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B4998F010>, 'floor', 1, <built-in function floor>, deterministic=True)
+2026-03-03 18:16:03,304 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B4998F010>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2026-03-03 18:16:03,305 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B4998F010>)
+2026-03-03 18:16:03,305 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B4998F010>) completed
+2026-03-03 18:16:03,305 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49A1D540>, 'SELECT users.id, users.email, users.name, users.role, users.created_at, users.last_login, users.hashed_password \nFROM users \nWHERE users.email = ?', ('admin@gmail.com',))
+2026-03-03 18:16:03,306 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49A1D540>, 'SELECT users.id, users.email, users.name, users.role, users.created_at, users.last_login, users.hashed_password \nFROM users \nWHERE users.email = ?', ('admin@gmail.com',)) completed
+2026-03-03 18:16:03,306 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B49A1D540>)
+2026-03-03 18:16:03,306 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B49A1D540>) completed
+2026-03-03 18:16:03,306 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49A1D540>)
+2026-03-03 18:16:03,307 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49A1D540>) completed
+2026-03-03 18:16:03,307 - core.database - ERROR - Database session error: 400: Lỗi Backend khi đăng nhập: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+Traceback (most recent call last):
+  File "D:\ASM1\backend\routers\auth.py", line 361, in login_password
+    raise HTTPException(status_code=401, detail="Email này chưa đăng ký. Vui lòng tạo tài khoản mới!")
+fastapi.exceptions.HTTPException: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ASM1\backend\core\database.py", line 542, in get_db
+    yield session
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\backend\routers\auth.py", line 380, in login_password
+    raise HTTPException(status_code=400, detail=f"Lỗi Backend khi đăng nhập: {str(e)}")
+fastapi.exceptions.HTTPException: 400: Lỗi Backend khi đăng nhập: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+2026-03-03 18:16:03,309 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.0080s
+2026-03-03 18:16:03,309 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B4998F010>)
+2026-03-03 18:16:03,309 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B4998F010>) completed
+2026-03-03 18:16:03,310 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B4998F010>)
+2026-03-03 18:16:03,310 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B4998F010>) completed
+2026-03-03 18:16:03,310 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x0000022B4998F010>)
+2026-03-03 18:16:03,310 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x0000022B4998F010>) completed
+2026-03-03 18:16:03,311 - core.database - ERROR - Failed to create database session: 400: Lỗi Backend khi đăng nhập: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+Traceback (most recent call last):
+  File "D:\ASM1\backend\routers\auth.py", line 361, in login_password
+    raise HTTPException(status_code=401, detail="Email này chưa đăng ký. Vui lòng tạo tài khoản mới!")
+fastapi.exceptions.HTTPException: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ASM1\backend\core\database.py", line 542, in get_db
+    yield session
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\backend\routers\auth.py", line 380, in login_password
+    raise HTTPException(status_code=400, detail=f"Lỗi Backend khi đăng nhập: {str(e)}")
+fastapi.exceptions.HTTPException: 400: Lỗi Backend khi đăng nhập: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+2026-03-03 18:16:03,444 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-03-03 18:16:03,444 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0000s
+2026-03-03 18:16:03,445 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x0000022B49370F40>
+2026-03-03 18:16:03,445 - aiosqlite - DEBUG - operation <function connect.<locals>.connector at 0x0000022B49370F40> completed
+2026-03-03 18:16:03,446 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B4998EF20>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x0000022B4995F6A0>, deterministic=True)
+2026-03-03 18:16:03,446 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B4998EF20>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x0000022B4995F6A0>, deterministic=True) completed
+2026-03-03 18:16:03,446 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B4998EF20>, 'floor', 1, <built-in function floor>, deterministic=True)
+2026-03-03 18:16:03,447 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x0000022B4998EF20>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2026-03-03 18:16:03,447 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B4998EF20>)
+2026-03-03 18:16:03,448 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x0000022B4998EF20>) completed
+2026-03-03 18:16:03,448 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49A1FE40>, 'SELECT users.id, users.email, users.name, users.role, users.created_at, users.last_login, users.hashed_password \nFROM users \nWHERE users.email = ?', ('admin@gmail.com',))
+2026-03-03 18:16:03,449 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x0000022B49A1FE40>, 'SELECT users.id, users.email, users.name, users.role, users.created_at, users.last_login, users.hashed_password \nFROM users \nWHERE users.email = ?', ('admin@gmail.com',)) completed
+2026-03-03 18:16:03,449 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B49A1FE40>)
+2026-03-03 18:16:03,449 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x0000022B49A1FE40>) completed
+2026-03-03 18:16:03,450 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49A1FE40>)
+2026-03-03 18:16:03,450 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x0000022B49A1FE40>) completed
+2026-03-03 18:16:03,450 - core.database - ERROR - Database session error: 400: Lỗi Backend khi đăng nhập: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+Traceback (most recent call last):
+  File "D:\ASM1\backend\routers\auth.py", line 361, in login_password
+    raise HTTPException(status_code=401, detail="Email này chưa đăng ký. Vui lòng tạo tài khoản mới!")
+fastapi.exceptions.HTTPException: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ASM1\backend\core\database.py", line 542, in get_db
+    yield session
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\backend\routers\auth.py", line 380, in login_password
+    raise HTTPException(status_code=400, detail=f"Lỗi Backend khi đăng nhập: {str(e)}")
+fastapi.exceptions.HTTPException: 400: Lỗi Backend khi đăng nhập: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+2026-03-03 18:16:03,452 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.0080s
+2026-03-03 18:16:03,452 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B4998EF20>)
+2026-03-03 18:16:03,452 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B4998EF20>) completed
+2026-03-03 18:16:03,452 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B4998EF20>)
+2026-03-03 18:16:03,453 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x0000022B4998EF20>) completed
+2026-03-03 18:16:03,453 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x0000022B4998EF20>)
+2026-03-03 18:16:03,453 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x0000022B4998EF20>) completed
+2026-03-03 18:16:03,454 - core.database - ERROR - Failed to create database session: 400: Lỗi Backend khi đăng nhập: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+Traceback (most recent call last):
+  File "D:\ASM1\backend\routers\auth.py", line 361, in login_password
+    raise HTTPException(status_code=401, detail="Email này chưa đăng ký. Vui lòng tạo tài khoản mới!")
+fastapi.exceptions.HTTPException: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\ASM1\backend\core\database.py", line 542, in get_db
+    yield session
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\backend\routers\auth.py", line 380, in login_password
+    raise HTTPException(status_code=400, detail=f"Lỗi Backend khi đăng nhập: {str(e)}")
+fastapi.exceptions.HTTPException: 400: Lỗi Backend khi đăng nhập: 401: Email này chưa đăng ký. Vui lòng tạo tài khoản mới!
+2026-03-03 18:18:54,343 - services.database - DEBUG - [DB_OP] Starting database close
+2026-03-03 18:18:54,344 - core.database - INFO - Database connection closed and engine disposed
+2026-03-03 18:18:54,348 - services.database - INFO - Database connections closed
+2026-03-03 18:18:54,349 - services.database - DEBUG - [DB_OP] Database close completed in 0.0060s

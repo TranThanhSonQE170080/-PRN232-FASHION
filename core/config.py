@@ -90,3 +90,26 @@ class Settings(BaseSettings):
 
 # Global settings instance
 settings = Settings()
+
+
+# Backwards-compatible JWT aliases for older code expecting `jwt_*` names
+def _jwt_aliases():
+    if not hasattr(Settings, "jwt_secret_key"):
+        @property
+        def jwt_secret_key(self) -> str:
+            return self.secret_key
+
+        @property
+        def jwt_algorithm(self) -> str:
+            return self.algorithm
+
+        @property
+        def jwt_expire_minutes(self) -> int:
+            return self.access_token_expire_minutes
+
+        setattr(Settings, "jwt_secret_key", jwt_secret_key)
+        setattr(Settings, "jwt_algorithm", jwt_algorithm)
+        setattr(Settings, "jwt_expire_minutes", jwt_expire_minutes)
+
+
+_jwt_aliases()

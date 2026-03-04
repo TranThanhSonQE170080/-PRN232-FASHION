@@ -1,0 +1,851 @@
+2026-03-04 13:47:51,040 - main - INFO - === Logging system initialized ===
+2026-03-04 13:47:51,040 - main - INFO - Log file: logs/app_20260304_134751.log
+2026-03-04 13:47:51,041 - main - INFO - Log level: INFO
+2026-03-04 13:47:51,041 - main - INFO - Timestamp: 20260304_134751
+2026-03-04 13:47:51,067 - main - INFO - === Logging system initialized ===
+2026-03-04 13:47:51,068 - main - INFO - Log file: logs/app_20260304_134751.log
+2026-03-04 13:47:51,068 - main - INFO - Log level: INFO
+2026-03-04 13:47:51,068 - main - INFO - Timestamp: 20260304_134751
+2026-03-04 13:47:51,094 - main - INFO - === Logging system initialized ===
+2026-03-04 13:47:51,095 - main - INFO - Log file: logs/app_20260304_134751.log
+2026-03-04 13:47:51,101 - main - INFO - Log level: INFO
+2026-03-04 13:47:51,101 - main - INFO - Timestamp: 20260304_134751
+2026-03-04 13:47:51,501 - main - INFO - Included router: routers.aihub.router
+2026-03-04 13:47:51,521 - main - INFO - Included router: routers.aihub.router
+2026-03-04 13:47:51,533 - main - INFO - Included router: routers.auth.router
+2026-03-04 13:47:51,536 - main - INFO - Included router: routers.health.router
+2026-03-04 13:47:51,544 - main - INFO - Included router: routers.orders.router
+2026-03-04 13:47:51,551 - main - INFO - Included router: routers.auth.router
+2026-03-04 13:47:51,552 - main - INFO - Included router: routers.health.router
+2026-03-04 13:47:51,553 - main - INFO - Included router: routers.aihub.router
+2026-03-04 13:47:51,561 - main - INFO - Included router: routers.orders.router
+2026-03-04 13:47:51,588 - main - INFO - Included router: routers.auth.router
+2026-03-04 13:47:51,590 - main - INFO - Included router: routers.health.router
+2026-03-04 13:47:51,599 - main - INFO - Included router: routers.orders.router
+2026-03-04 13:47:51,599 - main - INFO - Included router: routers.products.router
+2026-03-04 13:47:51,615 - main - INFO - Included router: routers.settings.router
+2026-03-04 13:47:51,615 - main - INFO - Included router: routers.products.router
+2026-03-04 13:47:51,636 - main - INFO - Included router: routers.settings.router
+2026-03-04 13:47:51,649 - main - INFO - Included router: routers.products.router
+2026-03-04 13:47:51,658 - main - INFO - Included router: routers.storage.router
+2026-03-04 13:47:51,667 - main - INFO - Included router: routers.user.router
+2026-03-04 13:47:51,668 - main - INFO - Included router: routers.settings.router
+2026-03-04 13:47:51,668 - main - INFO - === Application startup initiated ===
+2026-03-04 13:47:51,668 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-03-04 13:47:51,668 - services.database - INFO - 🔧 Starting database initialization...
+2026-03-04 13:47:51,668 - core.database - INFO - Starting database initialization...
+2026-03-04 13:47:51,668 - core.database - INFO - Normalizing database URL for async compatibility...
+2026-03-04 13:47:51,668 - core.database - DEBUG - Database exists:./test.db
+2026-03-04 13:47:51,668 - core.database - WARNING - Adjusted database URL driver for async compatibility
+2026-03-04 13:47:51,668 - core.database - INFO - Creating async database engine...
+2026-03-04 13:47:51,668 - core.database - INFO - Using NullPool for sqlite+aiosqlite environment
+2026-03-04 13:47:51,686 - main - INFO - Included router: routers.storage.router
+2026-03-04 13:47:51,696 - core.database - INFO - Database engine created successfully
+2026-03-04 13:47:51,696 - core.database - INFO - Creating async session maker...
+2026-03-04 13:47:51,697 - core.database - INFO - Async session maker created successfully
+2026-03-04 13:47:51,697 - core.database - INFO - Database connection initialized successfully
+2026-03-04 13:47:51,697 - services.database - INFO - 🔧 Database connection initialized, now creating tables if tables not exist...
+2026-03-04 13:47:51,697 - main - INFO - Included router: routers.user.router
+2026-03-04 13:47:51,697 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-03-04 13:47:51,697 - core.database - INFO - 🔧 Starting table creation...
+2026-03-04 13:47:51,700 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x000001DCD67ED940>
+2026-03-04 13:47:51,700 - aiosqlite - DEBUG - operation <function connect.<locals>.connector at 0x000001DCD67ED940> completed
+2026-03-04 13:47:51,701 - main - INFO - === Application startup initiated ===
+2026-03-04 13:47:51,701 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000001DCD6797B50>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x000001DCD67ECC20>, deterministic=True)
+2026-03-04 13:47:51,701 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-03-04 13:47:51,701 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000001DCD6797B50>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x000001DCD67ECC20>, deterministic=True) completed
+2026-03-04 13:47:51,702 - services.database - INFO - 🔧 Starting database initialization...
+2026-03-04 13:47:51,702 - core.database - INFO - Starting database initialization...
+2026-03-04 13:47:51,702 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000001DCD6797B50>, 'floor', 1, <built-in function floor>, deterministic=True)
+2026-03-04 13:47:51,702 - core.database - INFO - Normalizing database URL for async compatibility...
+2026-03-04 13:47:51,703 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000001DCD6797B50>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2026-03-04 13:47:51,703 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001DCD6797B50>)
+2026-03-04 13:47:51,703 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001DCD6797B50>) completed
+2026-03-04 13:47:51,704 - core.database - DEBUG - Database exists:./test.db
+2026-03-04 13:47:51,704 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001DCD6804340>, 'PRAGMA read_uncommitted', [])
+2026-03-04 13:47:51,704 - core.database - WARNING - Adjusted database URL driver for async compatibility
+2026-03-04 13:47:51,704 - core.database - INFO - Creating async database engine...
+2026-03-04 13:47:51,704 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001DCD6804340>, 'PRAGMA read_uncommitted', []) completed
+2026-03-04 13:47:51,705 - core.database - INFO - Using NullPool for sqlite+aiosqlite environment
+2026-03-04 13:47:51,705 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001DCD6804340>)
+2026-03-04 13:47:51,705 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001DCD6804340>) completed
+2026-03-04 13:47:51,706 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001DCD6804340>)
+2026-03-04 13:47:51,706 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001DCD6804340>) completed
+2026-03-04 13:47:51,706 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000001DCD6797B50>)
+2026-03-04 13:47:51,706 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000001DCD6797B50>) completed
+2026-03-04 13:47:51,709 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001DCD6797B50>)
+2026-03-04 13:47:51,710 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001DCD6797B50>) completed
+2026-03-04 13:47:51,710 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001DCD6804440>, 'PRAGMA main.table_info("users")', ())
+2026-03-04 13:47:51,711 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001DCD6804440>, 'PRAGMA main.table_info("users")', ()) completed
+2026-03-04 13:47:51,712 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001DCD6804440>)
+2026-03-04 13:47:51,712 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001DCD6804440>) completed
+2026-03-04 13:47:51,712 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001DCD6804440>)
+2026-03-04 13:47:51,713 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001DCD6804440>) completed
+2026-03-04 13:47:51,713 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001DCD6797B50>)
+2026-03-04 13:47:51,714 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001DCD6797B50>) completed
+2026-03-04 13:47:51,714 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001DCD6804440>, 'PRAGMA main.table_info("oidc_states")', ())
+2026-03-04 13:47:51,715 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001DCD6804440>, 'PRAGMA main.table_info("oidc_states")', ()) completed
+2026-03-04 13:47:51,715 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001DCD6804440>)
+2026-03-04 13:47:51,715 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001DCD6804440>) completed
+2026-03-04 13:47:51,716 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001DCD6804440>)
+2026-03-04 13:47:51,716 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001DCD6804440>) completed
+2026-03-04 13:47:51,717 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001DCD6797B50>)
+2026-03-04 13:47:51,717 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001DCD6797B50>) completed
+2026-03-04 13:47:51,718 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001DCD6804440>, 'PRAGMA main.table_info("orders")', ())
+2026-03-04 13:47:51,718 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001DCD6804440>, 'PRAGMA main.table_info("orders")', ()) completed
+2026-03-04 13:47:51,719 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001DCD6804440>)
+2026-03-04 13:47:51,719 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001DCD6804440>) completed
+2026-03-04 13:47:51,720 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001DCD6804440>)
+2026-03-04 13:47:51,720 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001DCD6804440>) completed
+2026-03-04 13:47:51,721 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001DCD6797B50>)
+2026-03-04 13:47:51,721 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001DCD6797B50>) completed
+2026-03-04 13:47:51,721 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001DCD6804440>, 'PRAGMA main.table_info("products")', ())
+2026-03-04 13:47:51,722 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001DCD6804440>, 'PRAGMA main.table_info("products")', ()) completed
+2026-03-04 13:47:51,722 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001DCD6804440>)
+2026-03-04 13:47:51,723 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001DCD6804440>) completed
+2026-03-04 13:47:51,724 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001DCD6804440>)
+2026-03-04 13:47:51,724 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001DCD6804440>) completed
+2026-03-04 13:47:51,724 - core.database - INFO - Tables initialized successfully
+2026-03-04 13:47:51,725 - core.database - DEBUG - [DB_OP] Create tables completed in 0.0277s
+2026-03-04 13:47:51,725 - aiosqlite - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x000001DCD6797B50>)
+2026-03-04 13:47:51,725 - aiosqlite - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x000001DCD6797B50>) completed
+2026-03-04 13:47:51,727 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000001DCD6797B50>)
+2026-03-04 13:47:51,728 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000001DCD6797B50>) completed
+2026-03-04 13:47:51,730 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001DCD6797B50>)
+2026-03-04 13:47:51,730 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001DCD6797B50>) completed
+2026-03-04 13:47:51,731 - services.database - INFO - 🔧 Table creation completed
+2026-03-04 13:47:51,731 - services.database - INFO - Database initialized successfully
+2026-03-04 13:47:51,732 - services.database - DEBUG - [DB_OP] Database initialization completed in 0.0635s
+2026-03-04 13:47:51,732 - services.mock_data - INFO - Processing mock data file products.json for table products
+2026-03-04 13:47:51,733 - core.database - INFO - Database engine created successfully
+2026-03-04 13:47:51,733 - core.database - INFO - Creating async session maker...
+2026-03-04 13:47:51,733 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x000001DCD67ED9E0>
+2026-03-04 13:47:51,733 - core.database - INFO - Async session maker created successfully
+2026-03-04 13:47:51,733 - aiosqlite - DEBUG - operation <function connect.<locals>.connector at 0x000001DCD67ED9E0> completed
+2026-03-04 13:47:51,734 - core.database - INFO - Database connection initialized successfully
+2026-03-04 13:47:51,735 - services.database - INFO - 🔧 Database connection initialized, now creating tables if tables not exist...
+2026-03-04 13:47:51,735 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000001DCD6809F30>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x000001DCD67ECC20>, deterministic=True)
+2026-03-04 13:47:51,735 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-03-04 13:47:51,735 - core.database - INFO - 🔧 Starting table creation...
+2026-03-04 13:47:51,736 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000001DCD6809F30>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x000001DCD67ECC20>, deterministic=True) completed
+2026-03-04 13:47:51,736 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000001DCD6809F30>, 'floor', 1, <built-in function floor>, deterministic=True)
+2026-03-04 13:47:51,737 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000001DCD6809F30>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2026-03-04 13:47:51,737 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x000002893FE1D940>
+2026-03-04 13:47:51,738 - aiosqlite - DEBUG - operation <function connect.<locals>.connector at 0x000002893FE1D940> completed
+2026-03-04 13:47:51,738 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001DCD6809F30>)
+2026-03-04 13:47:51,738 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002893FDC7B50>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x000002893FE1CC20>, deterministic=True)
+2026-03-04 13:47:51,739 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001DCD6809F30>) completed
+2026-03-04 13:47:51,739 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002893FDC7B50>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x000002893FE1CC20>, deterministic=True) completed
+2026-03-04 13:47:51,739 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001DCD6804CC0>, 'PRAGMA main.table_xinfo("products")', ())
+2026-03-04 13:47:51,740 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002893FDC7B50>, 'floor', 1, <built-in function floor>, deterministic=True)
+2026-03-04 13:47:51,740 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001DCD6804CC0>, 'PRAGMA main.table_xinfo("products")', ()) completed
+2026-03-04 13:47:51,741 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002893FDC7B50>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2026-03-04 13:47:51,741 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001DCD6804CC0>)
+2026-03-04 13:47:51,741 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002893FDC7B50>)
+2026-03-04 13:47:51,741 - main - INFO - Included router: routers.storage.router
+2026-03-04 13:47:51,741 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001DCD6804CC0>) completed
+2026-03-04 13:47:51,741 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002893FDC7B50>) completed
+2026-03-04 13:47:51,742 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001DCD6804CC0>)
+2026-03-04 13:47:51,742 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002893FE34340>, 'PRAGMA read_uncommitted', [])
+2026-03-04 13:47:51,743 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001DCD6804CC0>) completed
+2026-03-04 13:47:51,743 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002893FE34340>, 'PRAGMA read_uncommitted', []) completed
+2026-03-04 13:47:51,744 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002893FE34340>)
+2026-03-04 13:47:51,744 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001DCD6809F30>)
+2026-03-04 13:47:51,744 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002893FE34340>) completed
+2026-03-04 13:47:51,745 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001DCD6809F30>) completed
+2026-03-04 13:47:51,745 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002893FE34340>)
+2026-03-04 13:47:51,745 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001DCD6804CC0>, "SELECT sql FROM  (SELECT * FROM sqlite_master UNION ALL   SELECT * FROM sqlite_temp_master) WHERE name = ? AND type in ('table', 'view')", ('products',))
+2026-03-04 13:47:51,745 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002893FE34340>) completed
+2026-03-04 13:47:51,746 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001DCD6804CC0>, "SELECT sql FROM  (SELECT * FROM sqlite_master UNION ALL   SELECT * FROM sqlite_temp_master) WHERE name = ? AND type in ('table', 'view')", ('products',)) completed
+2026-03-04 13:47:51,746 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002893FDC7B50>)
+2026-03-04 13:47:51,746 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002893FDC7B50>) completed
+2026-03-04 13:47:51,746 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001DCD6804CC0>)
+2026-03-04 13:47:51,747 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001DCD6804CC0>) completed
+2026-03-04 13:47:51,747 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002893FDC7B50>)
+2026-03-04 13:47:51,747 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001DCD6804CC0>)
+2026-03-04 13:47:51,748 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001DCD6804CC0>) completed
+2026-03-04 13:47:51,748 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002893FDC7B50>) completed
+2026-03-04 13:47:51,748 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002893FE34440>, 'PRAGMA main.table_info("users")', ())
+2026-03-04 13:47:51,748 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001DCD6809F30>)
+2026-03-04 13:47:51,749 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001DCD6809F30>) completed
+2026-03-04 13:47:51,749 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002893FE34440>, 'PRAGMA main.table_info("users")', ()) completed
+2026-03-04 13:47:51,749 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001DCD6804CC0>, 'PRAGMA main.foreign_key_list("products")', ())
+2026-03-04 13:47:51,749 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002893FE34440>)
+2026-03-04 13:47:51,750 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001DCD6804CC0>, 'PRAGMA main.foreign_key_list("products")', ()) completed
+2026-03-04 13:47:51,750 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002893FE34440>) completed
+2026-03-04 13:47:51,750 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001DCD6804CC0>)
+2026-03-04 13:47:51,750 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002893FE34440>)
+2026-03-04 13:47:51,750 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001DCD6804CC0>) completed
+2026-03-04 13:47:51,750 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002893FE34440>) completed
+2026-03-04 13:47:51,751 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001DCD6804CC0>)
+2026-03-04 13:47:51,751 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001DCD6804CC0>) completed
+2026-03-04 13:47:51,751 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002893FDC7B50>)
+2026-03-04 13:47:51,751 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002893FDC7B50>) completed
+2026-03-04 13:47:51,751 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001DCD6809F30>)
+2026-03-04 13:47:51,752 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002893FE34440>, 'PRAGMA main.table_info("oidc_states")', ())
+2026-03-04 13:47:51,752 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001DCD6809F30>) completed
+2026-03-04 13:47:51,752 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002893FE34440>, 'PRAGMA main.table_info("oidc_states")', ()) completed
+2026-03-04 13:47:51,752 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001DCD6804CC0>, 'PRAGMA temp.foreign_key_list("products")', ())
+2026-03-04 13:47:51,752 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001DCD6804CC0>, 'PRAGMA temp.foreign_key_list("products")', ()) completed
+2026-03-04 13:47:51,752 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002893FE34440>)
+2026-03-04 13:47:51,753 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002893FE34440>) completed
+2026-03-04 13:47:51,753 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001DCD6804CC0>)
+2026-03-04 13:47:51,753 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002893FE34440>)
+2026-03-04 13:47:51,753 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001DCD6804CC0>) completed
+2026-03-04 13:47:51,753 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002893FE34440>) completed
+2026-03-04 13:47:51,753 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001DCD6804CC0>)
+2026-03-04 13:47:51,754 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001DCD6804CC0>) completed
+2026-03-04 13:47:51,754 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002893FDC7B50>)
+2026-03-04 13:47:51,754 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002893FDC7B50>) completed
+2026-03-04 13:47:51,754 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001DCD6809F30>)
+2026-03-04 13:47:51,754 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002893FE34440>, 'PRAGMA main.table_info("orders")', ())
+2026-03-04 13:47:51,754 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001DCD6809F30>) completed
+2026-03-04 13:47:51,754 - main - INFO - Included router: routers.user.router
+2026-03-04 13:47:51,755 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002893FE34440>, 'PRAGMA main.table_info("orders")', ()) completed
+2026-03-04 13:47:51,755 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001DCD6804CC0>, "SELECT sql FROM  (SELECT * FROM sqlite_master UNION ALL   SELECT * FROM sqlite_temp_master) WHERE name = ? AND type in ('table', 'view')", ('products',))
+2026-03-04 13:47:51,755 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002893FE34440>)
+2026-03-04 13:47:51,755 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002893FE34440>) completed
+2026-03-04 13:47:51,756 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001DCD6804CC0>, "SELECT sql FROM  (SELECT * FROM sqlite_master UNION ALL   SELECT * FROM sqlite_temp_master) WHERE name = ? AND type in ('table', 'view')", ('products',)) completed
+2026-03-04 13:47:51,757 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002893FE34440>)
+2026-03-04 13:47:51,757 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001DCD6804CC0>)
+2026-03-04 13:47:51,758 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002893FE34440>) completed
+2026-03-04 13:47:51,758 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001DCD6804CC0>) completed
+2026-03-04 13:47:51,758 - main - INFO - === Application startup initiated ===
+2026-03-04 13:47:51,758 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001DCD6804CC0>)
+2026-03-04 13:47:51,758 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002893FDC7B50>)
+2026-03-04 13:47:51,758 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-03-04 13:47:51,759 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001DCD6804CC0>) completed
+2026-03-04 13:47:51,759 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002893FDC7B50>) completed
+2026-03-04 13:47:51,759 - services.database - INFO - 🔧 Starting database initialization...
+2026-03-04 13:47:51,759 - core.database - INFO - Starting database initialization...
+2026-03-04 13:47:51,759 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002893FE34440>, 'PRAGMA main.table_info("products")', ())
+2026-03-04 13:47:51,759 - core.database - INFO - Normalizing database URL for async compatibility...
+2026-03-04 13:47:51,759 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002893FE34440>, 'PRAGMA main.table_info("products")', ()) completed
+2026-03-04 13:47:51,760 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002893FE34440>)
+2026-03-04 13:47:51,760 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002893FE34440>) completed
+2026-03-04 13:47:51,760 - core.database - DEBUG - Database exists:./test.db
+2026-03-04 13:47:51,760 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002893FE34440>)
+2026-03-04 13:47:51,760 - core.database - WARNING - Adjusted database URL driver for async compatibility
+2026-03-04 13:47:51,760 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002893FE34440>) completed
+2026-03-04 13:47:51,760 - core.database - INFO - Creating async database engine...
+2026-03-04 13:47:51,761 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001DCD6809F30>)
+2026-03-04 13:47:51,761 - core.database - INFO - Using NullPool for sqlite+aiosqlite environment
+2026-03-04 13:47:51,761 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001DCD6809F30>) completed
+2026-03-04 13:47:51,761 - core.database - INFO - Tables initialized successfully
+2026-03-04 13:47:51,761 - core.database - DEBUG - [DB_OP] Create tables completed in 0.0260s
+2026-03-04 13:47:51,761 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001DCD6804CC0>, 'PRAGMA main.index_list("products")', ())
+2026-03-04 13:47:51,761 - aiosqlite - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x000002893FDC7B50>)
+2026-03-04 13:47:51,761 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001DCD6804CC0>, 'PRAGMA main.index_list("products")', ()) completed
+2026-03-04 13:47:51,762 - aiosqlite - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x000002893FDC7B50>) completed
+2026-03-04 13:47:51,762 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001DCD6804CC0>)
+2026-03-04 13:47:51,762 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002893FDC7B50>)
+2026-03-04 13:47:51,762 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001DCD6804CC0>) completed
+2026-03-04 13:47:51,762 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002893FDC7B50>) completed
+2026-03-04 13:47:51,762 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001DCD6804CC0>)
+2026-03-04 13:47:51,763 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001DCD6804CC0>) completed
+2026-03-04 13:47:51,763 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000002893FDC7B50>)
+2026-03-04 13:47:51,763 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000002893FDC7B50>) completed
+2026-03-04 13:47:51,763 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001DCD6809F30>)
+2026-03-04 13:47:51,763 - services.database - INFO - 🔧 Table creation completed
+2026-03-04 13:47:51,764 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001DCD6809F30>) completed
+2026-03-04 13:47:51,764 - services.database - INFO - Database initialized successfully
+2026-03-04 13:47:51,764 - services.database - DEBUG - [DB_OP] Database initialization completed in 0.0625s
+2026-03-04 13:47:51,764 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001DCD6804CC0>, 'PRAGMA main.index_info("ix_products_id")', ())
+2026-03-04 13:47:51,764 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001DCD6804CC0>, 'PRAGMA main.index_info("ix_products_id")', ()) completed
+2026-03-04 13:47:51,765 - services.mock_data - INFO - Processing mock data file products.json for table products
+2026-03-04 13:47:51,765 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001DCD6804CC0>)
+2026-03-04 13:47:51,765 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001DCD6804CC0>) completed
+2026-03-04 13:47:51,765 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x000002893FE1D9E0>
+2026-03-04 13:47:51,766 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001DCD6804CC0>)
+2026-03-04 13:47:51,766 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001DCD6804CC0>) completed
+2026-03-04 13:47:51,766 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002893FE39F30>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x000002893FE1CC20>, deterministic=True)
+2026-03-04 13:47:51,766 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002893FE39F30>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x000002893FE1CC20>, deterministic=True) completed
+2026-03-04 13:47:51,766 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001DCD6809F30>)
+2026-03-04 13:47:51,767 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001DCD6809F30>) completed
+2026-03-04 13:47:51,767 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002893FE39F30>, 'floor', 1, <built-in function floor>, deterministic=True)
+2026-03-04 13:47:51,767 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001DCD6804CC0>, 'PRAGMA main.index_list("products")', ())
+2026-03-04 13:47:51,767 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002893FE39F30>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2026-03-04 13:47:51,767 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001DCD6804CC0>, 'PRAGMA main.index_list("products")', ()) completed
+2026-03-04 13:47:51,768 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001DCD6804CC0>)
+2026-03-04 13:47:51,768 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002893FE39F30>)
+2026-03-04 13:47:51,768 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001DCD6804CC0>) completed
+2026-03-04 13:47:51,768 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002893FE39F30>) completed
+2026-03-04 13:47:51,768 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001DCD6804CC0>)
+2026-03-04 13:47:51,768 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002893FE34CC0>, 'PRAGMA main.table_xinfo("products")', ())
+2026-03-04 13:47:51,768 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001DCD6804CC0>) completed
+2026-03-04 13:47:51,769 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001DCD6809F30>)
+2026-03-04 13:47:51,769 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002893FE34CC0>, 'PRAGMA main.table_xinfo("products")', ()) completed
+2026-03-04 13:47:51,769 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001DCD6809F30>) completed
+2026-03-04 13:47:51,769 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002893FE34CC0>)
+2026-03-04 13:47:51,769 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001DCD6804CC0>, 'PRAGMA main.index_info("ix_products_id")', ())
+2026-03-04 13:47:51,770 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002893FE34CC0>) completed
+2026-03-04 13:47:51,770 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001DCD6804CC0>, 'PRAGMA main.index_info("ix_products_id")', ()) completed
+2026-03-04 13:47:51,770 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002893FE34CC0>)
+2026-03-04 13:47:51,770 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001DCD6804CC0>)
+2026-03-04 13:47:51,770 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002893FE34CC0>) completed
+2026-03-04 13:47:51,770 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001DCD6804CC0>) completed
+2026-03-04 13:47:51,771 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001DCD6804CC0>)
+2026-03-04 13:47:51,771 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001DCD6804CC0>) completed
+2026-03-04 13:47:51,771 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002893FE39F30>)
+2026-03-04 13:47:51,771 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002893FE39F30>) completed
+2026-03-04 13:47:51,771 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001DCD6809F30>)
+2026-03-04 13:47:51,772 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001DCD6809F30>) completed
+2026-03-04 13:47:51,772 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002893FE34CC0>, "SELECT sql FROM  (SELECT * FROM sqlite_master UNION ALL   SELECT * FROM sqlite_temp_master) WHERE name = ? AND type in ('table', 'view')", ('products',))
+2026-03-04 13:47:51,772 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001DCD6804CC0>, "SELECT sql FROM  (SELECT * FROM sqlite_master UNION ALL   SELECT * FROM sqlite_temp_master) WHERE name = ? AND type in ('table', 'view')", ('products',))
+2026-03-04 13:47:51,772 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002893FE34CC0>, "SELECT sql FROM  (SELECT * FROM sqlite_master UNION ALL   SELECT * FROM sqlite_temp_master) WHERE name = ? AND type in ('table', 'view')", ('products',)) completed
+2026-03-04 13:47:51,772 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001DCD6804CC0>, "SELECT sql FROM  (SELECT * FROM sqlite_master UNION ALL   SELECT * FROM sqlite_temp_master) WHERE name = ? AND type in ('table', 'view')", ('products',)) completed
+2026-03-04 13:47:51,773 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002893FE34CC0>)
+2026-03-04 13:47:51,773 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001DCD6804CC0>)
+2026-03-04 13:47:51,773 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002893FE34CC0>) completed
+2026-03-04 13:47:51,773 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001DCD6804CC0>) completed
+2026-03-04 13:47:51,773 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002893FE34CC0>)
+2026-03-04 13:47:51,773 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001DCD6804CC0>)
+2026-03-04 13:47:51,773 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002893FE34CC0>) completed
+2026-03-04 13:47:51,774 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001DCD6804CC0>) completed
+2026-03-04 13:47:51,774 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002893FE39F30>)
+2026-03-04 13:47:51,774 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002893FE39F30>) completed
+2026-03-04 13:47:51,775 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002893FE34CC0>, 'PRAGMA main.foreign_key_list("products")', ())
+2026-03-04 13:47:51,775 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002893FE34CC0>, 'PRAGMA main.foreign_key_list("products")', ()) completed
+2026-03-04 13:47:51,775 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002893FE34CC0>)
+2026-03-04 13:47:51,775 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002893FE34CC0>) completed
+2026-03-04 13:47:51,776 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002893FE34CC0>)
+2026-03-04 13:47:51,776 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002893FE34CC0>) completed
+2026-03-04 13:47:51,776 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002893FE39F30>)
+2026-03-04 13:47:51,776 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002893FE39F30>) completed
+2026-03-04 13:47:51,777 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001DCD6809F30>)
+2026-03-04 13:47:51,777 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000001DCD6809F30>) completed
+2026-03-04 13:47:51,777 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002893FE34CC0>, 'PRAGMA temp.foreign_key_list("products")', ())
+2026-03-04 13:47:51,778 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001DCD677BDC0>, 'SELECT count(*) AS count_1 \nFROM products', ())
+2026-03-04 13:47:51,778 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002893FE34CC0>, 'PRAGMA temp.foreign_key_list("products")', ()) completed
+2026-03-04 13:47:51,778 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000001DCD677BDC0>, 'SELECT count(*) AS count_1 \nFROM products', ()) completed
+2026-03-04 13:47:51,778 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002893FE34CC0>)
+2026-03-04 13:47:51,779 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001DCD677BDC0>)
+2026-03-04 13:47:51,779 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002893FE34CC0>) completed
+2026-03-04 13:47:51,779 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000001DCD677BDC0>) completed
+2026-03-04 13:47:51,780 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002893FE34CC0>)
+2026-03-04 13:47:51,780 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001DCD677BDC0>)
+2026-03-04 13:47:51,780 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002893FE34CC0>) completed
+2026-03-04 13:47:51,780 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000001DCD677BDC0>) completed
+2026-03-04 13:47:51,781 - services.mock_data - INFO - Table products already has 8 rows; skipping mock insert
+2026-03-04 13:47:51,781 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002893FE39F30>)
+2026-03-04 13:47:51,781 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002893FE39F30>) completed
+2026-03-04 13:47:51,781 - core.database - INFO - Database engine created successfully
+2026-03-04 13:47:51,781 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002893FE34CC0>, "SELECT sql FROM  (SELECT * FROM sqlite_master UNION ALL   SELECT * FROM sqlite_temp_master) WHERE name = ? AND type in ('table', 'view')", ('products',))
+2026-03-04 13:47:51,781 - core.database - INFO - Creating async session maker...
+n method commit of sqlite3.Connection object at 0x000001DCD6809F30>)
+2026-03-04 13:47:51,781 - core.database - INFO - Async session maker created successfully
+2026-03-04 13:47:51,781 - aiosqlite - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x000001DCD6809F30>) completed
+2026-03-04 13:47:51,781 - core.database - INFO - Database connection initialized successfully
+2026-03-04 13:47:51,781 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002893FE34CC0>, "SELECT sql FROM  (SELECT * FROM sqlite_master UNION ALL   SELECT * FROM sqlite_temp_master) WHERE name = ? AND type in ('table', 'view')", ('products',)) completed
+2026-03-04 13:47:51,781 - services.database - INFO - 🔧 Database connection initialized, now creating tables if tables not exist...
+2026-03-04 13:47:51,781 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-03-04 13:47:51,781 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000001DCD6809F30>)
+2026-03-04 13:47:51,781 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002893FE34CC0>)
+2026-03-04 13:47:51,781 - core.database - INFO - 🔧 Starting table creation...
+2026-03-04 13:47:51,781 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000001DCD6809F30>) completed
+2026-03-04 13:47:51,781 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002893FE34CC0>) completed
+2026-03-04 13:47:51,785 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000001DCD6809F30>)
+2026-03-04 13:47:51,786 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002893FE34CC0>)
+2026-03-04 13:47:51,787 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002893FE34CC0>) completed
+2026-03-04 13:47:51,787 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000001DCD6809F30>) completed
+2026-03-04 13:47:51,787 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x000002D04ACFD940>
+2026-03-04 13:47:51,788 - aiosqlite - DEBUG - operation <function connect.<locals>.connector at 0x000002D04ACFD940> completed
+2026-03-04 13:47:51,788 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-03-04 13:47:51,788 - services.database - INFO - 🔧 Starting database initialization...
+2026-03-04 13:47:51,789 - core.database - INFO - Starting database initialization...
+2026-03-04 13:47:51,789 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002D04ACA7B50>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x000002D04ACFCC20>, deterministic=True)
+2026-03-04 13:47:51,789 - core.database - INFO - Database already initialized
+2026-03-04 13:47:51,789 - services.database - INFO - 🔧 Database connection initialized, now creating tables if tables not exist...
+ at 0x000002D04ACA7B50>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x000002D04ACFCC20>, deterministic=True) completed
+2026-03-04 13:47:51,790 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002893FE39F30>)
+2026-03-04 13:47:51,790 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-03-04 13:47:51,790 - core.database - INFO - Tables already initialized
+2026-03-04 13:47:51,790 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002893FE39F30>) completed
+2026-03-04 13:47:51,790 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002D04ACA7B50>, 'floor', 1, <built-in function floor>, deterministic=True)
+2026-03-04 13:47:51,790 - services.database - INFO - 🔧 Table creation completed
+2026-03-04 13:47:51,791 - services.database - INFO - Database initialized successfully
+2026-03-04 13:47:51,791 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002893FE34CC0>, 'PRAGMA main.index_list("products")', ())
+2026-03-04 13:47:51,791 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002D04ACA7B50>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2026-03-04 13:47:51,791 - services.database - DEBUG - [DB_OP] Database initialization completed in 0.0030s
+2026-03-04 13:47:51,791 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002893FE34CC0>, 'PRAGMA main.index_list("products")', ()) completed
+2026-03-04 13:47:51,791 - services.auth - WARNING - Admin user ID or email not configured, skipping admin initialization
+2026-03-04 13:47:51,791 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04ACA7B50>)
+2026-03-04 13:47:51,792 - main - INFO - === Application startup completed successfully ===
+2026-03-04 13:47:51,792 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002893FE34CC0>)
+2026-03-04 13:47:51,792 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04ACA7B50>) completed
+2026-03-04 13:47:51,792 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002893FE34CC0>) completed
+2026-03-04 13:47:51,793 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD142C0>, 'PRAGMA read_uncommitted', [])
+2026-03-04 13:47:51,793 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002893FE34CC0>)
+2026-03-04 13:47:51,793 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD142C0>, 'PRAGMA read_uncommitted', []) completed
+2026-03-04 13:47:51,793 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002893FE34CC0>) completed
+2026-03-04 13:47:51,794 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AD142C0>)
+2026-03-04 13:47:51,794 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AD142C0>) completed
+2026-03-04 13:47:51,794 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002893FE39F30>)
+2026-03-04 13:47:51,794 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002893FE39F30>) completed
+2026-03-04 13:47:51,794 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AD142C0>)
+2026-03-04 13:47:51,795 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AD142C0>) completed
+2026-03-04 13:47:51,795 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002893FE34CC0>, 'PRAGMA main.index_info("ix_products_id")', ())
+2026-03-04 13:47:51,795 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002D04ACA7B50>)
+2026-03-04 13:47:51,795 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002893FE34CC0>, 'PRAGMA main.index_info("ix_products_id")', ()) completed
+2026-03-04 13:47:51,796 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002D04ACA7B50>) completed
+2026-03-04 13:47:51,796 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002893FE34CC0>)
+2026-03-04 13:47:51,796 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002893FE34CC0>) completed
+2026-03-04 13:47:51,797 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002893FE34CC0>)
+2026-03-04 13:47:51,797 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04ACA7B50>)
+2026-03-04 13:47:51,797 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002893FE34CC0>) completed
+2026-03-04 13:47:51,797 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04ACA7B50>) completed
+2026-03-04 13:47:51,798 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD143C0>, 'PRAGMA main.table_info("users")', ())
+2026-03-04 13:47:51,798 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002893FE39F30>)
+2026-03-04 13:47:51,798 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002893FE39F30>) completed
+2026-03-04 13:47:51,799 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD143C0>, 'PRAGMA main.table_info("users")', ()) completed
+2026-03-04 13:47:51,799 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002893FE34CC0>, 'PRAGMA main.index_list("products")', ())
+2026-03-04 13:47:51,799 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AD143C0>)
+2026-03-04 13:47:51,799 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002893FE34CC0>, 'PRAGMA main.index_list("products")', ()) completed
+2026-03-04 13:47:51,800 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002893FE34CC0>)
+2026-03-04 13:47:51,801 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AD143C0>) completed
+2026-03-04 13:47:51,801 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002893FE34CC0>) completed
+2026-03-04 13:47:51,801 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AD143C0>)
+2026-03-04 13:47:51,802 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002893FE34CC0>)
+2026-03-04 13:47:51,802 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AD143C0>) completed
+2026-03-04 13:47:51,802 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002893FE34CC0>) completed
+2026-03-04 13:47:51,803 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04ACA7B50>)
+2026-03-04 13:47:51,803 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002893FE39F30>)
+2026-03-04 13:47:51,803 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04ACA7B50>) completed
+2026-03-04 13:47:51,803 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002893FE39F30>) completed
+2026-03-04 13:47:51,803 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD143C0>, 'PRAGMA main.table_info("oidc_states")', ())
+2026-03-04 13:47:51,803 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002893FE34CC0>, 'PRAGMA main.index_info("ix_products_id")', ())
+2026-03-04 13:47:51,804 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002893FE34CC0>, 'PRAGMA main.index_info("ix_products_id")', ()) completed
+2026-03-04 13:47:51,804 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD143C0>, 'PRAGMA main.table_info("oidc_states")', ()) completed
+2026-03-04 13:47:51,804 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002893FE34CC0>)
+2026-03-04 13:47:51,805 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AD143C0>) completed
+2026-03-04 13:47:51,805 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AD143C0>)
+2026-03-04 13:47:51,805 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002893FE34CC0>) completed
+2026-03-04 13:47:51,805 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AD143C0>) completed
+2026-03-04 13:47:51,806 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002893FE39F30>)
+2026-03-04 13:47:51,806 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04ACA7B50>)
+2026-03-04 13:47:51,806 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002893FE39F30>) completed
+2026-03-04 13:47:51,806 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04ACA7B50>) completed
+2026-03-04 13:47:51,807 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002893FE34CC0>, "SELECT sql FROM  (SELECT * FROM sqlite_master UNION ALL   SELECT * FROM sqlite_temp_master) WHERE name = ? AND type in ('table', 'view')", ('products',))
+2026-03-04 13:47:51,807 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD143C0>, 'PRAGMA main.table_info("orders")', ())
+2026-03-04 13:47:51,807 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002893FE34CC0>, "SELECT sql FROM  (SELECT * FROM sqlite_master UNION ALL   SELECT * FROM sqlite_temp_master) WHERE name = ? AND type in ('table', 'view')", ('products',)) completed
+2026-03-04 13:47:51,807 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD143C0>, 'PRAGMA main.table_info("orders")', ()) completed
+2026-03-04 13:47:51,808 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002893FE34CC0>)
+2026-03-04 13:47:51,808 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002893FE34CC0>) completed
+2026-03-04 13:47:51,808 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002893FE34CC0>)
+2026-03-04 13:47:51,808 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AD143C0>) completed
+2026-03-04 13:47:51,809 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002893FE34CC0>) completed
+2026-03-04 13:47:51,809 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04ACA7B50>)
+2026-03-04 13:47:51,809 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04ACA7B50>) completed
+2026-03-04 13:47:51,809 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD143C0>, 'PRAGMA main.table_info("products")', ())
+2026-03-04 13:47:51,810 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD143C0>, 'PRAGMA main.table_info("products")', ()) completed
+2026-03-04 13:47:51,810 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AD143C0>)
+2026-03-04 13:47:51,810 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AD143C0>) completed
+2026-03-04 13:47:51,811 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AD143C0>)
+2026-03-04 13:47:51,811 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AD143C0>) completed
+2026-03-04 13:47:51,811 - core.database - INFO - Tables initialized successfully
+2026-03-04 13:47:51,812 - core.database - DEBUG - [DB_OP] Create tables completed in 0.0296s
+2026-03-04 13:47:51,812 - aiosqlite - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x000002D04ACA7B50>)
+2026-03-04 13:47:51,812 - aiosqlite - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x000002D04ACA7B50>) completed
+2026-03-04 13:47:51,812 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002893FE39F30>)
+2026-03-04 13:47:51,812 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002D04ACA7B50>)
+2026-03-04 13:47:51,813 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002893FE39F30>) completed
+2026-03-04 13:47:51,813 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002D04ACA7B50>) completed
+2026-03-04 13:47:51,813 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002893FDABDC0>, 'SELECT count(*) AS count_1 \nFROM products', ())
+2026-03-04 13:47:51,813 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000002D04ACA7B50>)
+2026-03-04 13:47:51,818 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000002D04ACA7B50>) completed
+2026-03-04 13:47:51,818 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002893FDABDC0>, 'SELECT count(*) AS count_1 \nFROM products', ()) completed
+2026-03-04 13:47:51,818 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002893FDABDC0>)
+2026-03-04 13:47:51,818 - services.database - INFO - 🔧 Table creation completed
+2026-03-04 13:47:51,819 - services.database - INFO - Database initialized successfully
+2026-03-04 13:47:51,819 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002893FDABDC0>) completed
+2026-03-04 13:47:51,820 - services.database - DEBUG - [DB_OP] Database initialization completed in 0.0615s
+2026-03-04 13:47:51,820 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002893FDABDC0>)
+2026-03-04 13:47:51,820 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002893FDABDC0>) completed
+2026-03-04 13:47:51,820 - services.mock_data - INFO - Processing mock data file products.json for table products
+2026-03-04 13:47:51,820 - services.mock_data - INFO - Table products already has 8 rows; skipping mock insert
+2026-03-04 13:47:51,820 - aiosqlite - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x000002893FE39F30>)
+2026-03-04 13:47:51,820 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x000002D04ACFD9E0>
+2026-03-04 13:47:51,820 - aiosqlite - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x000002893FE39F30>) completed
+2026-03-04 13:47:51,821 - aiosqlite - DEBUG - operation <function connect.<locals>.connector at 0x000002D04ACFD9E0> completed
+2026-03-04 13:47:51,821 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002893FE39F30>)
+2026-03-04 13:47:51,821 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002D04AD19F30>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x000002D04ACFCC20>, deterministic=True)
+2026-03-04 13:47:51,821 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002893FE39F30>) completed
+2026-03-04 13:47:51,822 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002D04AD19F30>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x000002D04ACFCC20>, deterministic=True) completed
+2026-03-04 13:47:51,822 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000002893FE39F30>)
+2026-03-04 13:47:51,822 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000002893FE39F30>) completed
+2026-03-04 13:47:51,822 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002D04AD19F30>, 'floor', 1, <built-in function floor>, deterministic=True)
+2026-03-04 13:47:51,822 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002D04AD19F30>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2026-03-04 13:47:51,822 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-03-04 13:47:51,823 - services.database - INFO - 🔧 Starting database initialization...
+2026-03-04 13:47:51,823 - core.database - INFO - Starting database initialization...
+2026-03-04 13:47:51,823 - core.database - INFO - Database already initialized
+2026-03-04 13:47:51,823 - services.database - INFO - 🔧 Database connection initialized, now creating tables if tables not exist...
+2026-03-04 13:47:51,823 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD19F30>)
+2026-03-04 13:47:51,823 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-03-04 13:47:51,823 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD19F30>) completed
+2026-03-04 13:47:51,824 - core.database - INFO - Tables already initialized
+2026-03-04 13:47:51,824 - services.database - INFO - 🔧 Table creation completed
+2026-03-04 13:47:51,824 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD14C40>, 'PRAGMA main.table_xinfo("products")', ())
+2026-03-04 13:47:51,824 - services.database - INFO - Database initialized successfully
+2026-03-04 13:47:51,824 - services.database - DEBUG - [DB_OP] Database initialization completed in 0.0020s
+2026-03-04 13:47:51,824 - services.auth - WARNING - Admin user ID or email not configured, skipping admin initialization
+2026-03-04 13:47:51,824 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD14C40>, 'PRAGMA main.table_xinfo("products")', ()) completed
+2026-03-04 13:47:51,825 - main - INFO - === Application startup completed successfully ===
+2026-03-04 13:47:51,825 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AD14C40>)
+2026-03-04 13:47:51,825 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AD14C40>) completed
+2026-03-04 13:47:51,825 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AD14C40>)
+2026-03-04 13:47:51,826 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AD14C40>) completed
+2026-03-04 13:47:51,826 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD19F30>)
+2026-03-04 13:47:51,826 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD19F30>) completed
+2026-03-04 13:47:51,828 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD14C40>, "SELECT sql FROM  (SELECT * FROM sqlite_master UNION ALL   SELECT * FROM sqlite_temp_master) WHERE name = ? AND type in ('table', 'view')", ('products',))
+2026-03-04 13:47:51,828 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD14C40>, "SELECT sql FROM  (SELECT * FROM sqlite_master UNION ALL   SELECT * FROM sqlite_temp_master) WHERE name = ? AND type in ('table', 'view')", ('products',)) completed
+2026-03-04 13:47:51,828 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AD14C40>)
+2026-03-04 13:47:51,828 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AD14C40>) completed
+2026-03-04 13:47:51,828 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AD14C40>)
+2026-03-04 13:47:51,830 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AD14C40>) completed
+2026-03-04 13:47:51,830 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD19F30>)
+2026-03-04 13:47:51,830 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD19F30>) completed
+2026-03-04 13:47:51,830 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD14C40>, 'PRAGMA main.foreign_key_list("products")', ())
+2026-03-04 13:47:51,830 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD14C40>, 'PRAGMA main.foreign_key_list("products")', ()) completed
+2026-03-04 13:47:51,830 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AD14C40>)
+2026-03-04 13:47:51,830 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AD14C40>) completed
+2026-03-04 13:47:51,830 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AD14C40>)
+2026-03-04 13:47:51,830 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AD14C40>) completed
+2026-03-04 13:47:51,830 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD19F30>)
+2026-03-04 13:47:51,830 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD19F30>) completed
+2026-03-04 13:47:51,830 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD14C40>, 'PRAGMA temp.foreign_key_list("products")', ())
+2026-03-04 13:47:51,830 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD14C40>, 'PRAGMA temp.foreign_key_list("products")', ()) completed
+2026-03-04 13:47:51,830 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AD14C40>)
+2026-03-04 13:47:51,830 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AD14C40>) completed
+2026-03-04 13:47:51,833 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AD14C40>)
+2026-03-04 13:47:51,833 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AD14C40>) completed
+2026-03-04 13:47:51,833 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD19F30>)
+2026-03-04 13:47:51,833 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD19F30>) completed
+2026-03-04 13:47:51,834 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD14C40>, "SELECT sql FROM  (SELECT * FROM sqlite_master UNION ALL   SELECT * FROM sqlite_temp_master) WHERE name = ? AND type in ('table', 'view')", ('products',))
+2026-03-04 13:47:51,834 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD14C40>, "SELECT sql FROM  (SELECT * FROM sqlite_master UNION ALL   SELECT * FROM sqlite_temp_master) WHERE name = ? AND type in ('table', 'view')", ('products',)) completed
+2026-03-04 13:47:51,834 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AD14C40>)
+2026-03-04 13:47:51,834 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AD14C40>) completed
+2026-03-04 13:47:51,835 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AD14C40>)
+2026-03-04 13:47:51,835 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AD14C40>) completed
+2026-03-04 13:47:51,837 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD19F30>)
+2026-03-04 13:47:51,837 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD19F30>) completed
+2026-03-04 13:47:51,838 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD14C40>, 'PRAGMA main.index_list("products")', ())
+2026-03-04 13:47:51,838 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD14C40>, 'PRAGMA main.index_list("products")', ()) completed
+2026-03-04 13:47:51,838 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AD14C40>)
+2026-03-04 13:47:51,838 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AD14C40>) completed
+2026-03-04 13:47:51,839 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AD14C40>)
+2026-03-04 13:47:51,839 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AD14C40>) completed
+2026-03-04 13:47:51,839 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD19F30>)
+2026-03-04 13:47:51,840 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD19F30>) completed
+2026-03-04 13:47:51,840 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD14C40>, 'PRAGMA main.index_info("ix_products_id")', ())
+2026-03-04 13:47:51,840 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD14C40>, 'PRAGMA main.index_info("ix_products_id")', ()) completed
+2026-03-04 13:47:51,840 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AD14C40>)
+2026-03-04 13:47:51,841 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AD14C40>) completed
+2026-03-04 13:47:51,841 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AD14C40>)
+2026-03-04 13:47:51,841 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AD14C40>) completed
+2026-03-04 13:47:51,842 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD19F30>)
+2026-03-04 13:47:51,842 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD19F30>) completed
+2026-03-04 13:47:51,842 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD14C40>, 'PRAGMA main.index_list("products")', ())
+2026-03-04 13:47:51,843 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD14C40>, 'PRAGMA main.index_list("products")', ()) completed
+2026-03-04 13:47:51,843 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AD14C40>)
+2026-03-04 13:47:51,843 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AD14C40>) completed
+2026-03-04 13:47:51,844 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AD14C40>)
+2026-03-04 13:47:51,844 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AD14C40>) completed
+2026-03-04 13:47:51,845 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD19F30>)
+2026-03-04 13:47:51,845 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD19F30>) completed
+2026-03-04 13:47:51,845 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD14C40>, 'PRAGMA main.index_info("ix_products_id")', ())
+2026-03-04 13:47:51,846 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD14C40>, 'PRAGMA main.index_info("ix_products_id")', ()) completed
+2026-03-04 13:47:51,846 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AD14C40>)
+2026-03-04 13:47:51,846 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AD14C40>) completed
+2026-03-04 13:47:51,847 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AD14C40>)
+2026-03-04 13:47:51,848 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AD14C40>) completed
+2026-03-04 13:47:51,848 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD19F30>)
+2026-03-04 13:47:51,849 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD19F30>) completed
+2026-03-04 13:47:51,849 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD14C40>, "SELECT sql FROM  (SELECT * FROM sqlite_master UNION ALL   SELECT * FROM sqlite_temp_master) WHERE name = ? AND type in ('table', 'view')", ('products',))
+2026-03-04 13:47:51,849 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD14C40>, "SELECT sql FROM  (SELECT * FROM sqlite_master UNION ALL   SELECT * FROM sqlite_temp_master) WHERE name = ? AND type in ('table', 'view')", ('products',)) completed
+2026-03-04 13:47:51,850 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AD14C40>)
+2026-03-04 13:47:51,850 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AD14C40>) completed
+2026-03-04 13:47:51,851 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AD14C40>)
+2026-03-04 13:47:51,851 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AD14C40>) completed
+2026-03-04 13:47:51,855 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD19F30>)
+2026-03-04 13:47:51,855 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD19F30>) completed
+2026-03-04 13:47:51,855 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AC8BD40>, 'SELECT count(*) AS count_1 \nFROM products', ())
+2026-03-04 13:47:51,856 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AC8BD40>, 'SELECT count(*) AS count_1 \nFROM products', ()) completed
+2026-03-04 13:47:51,856 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AC8BD40>)
+2026-03-04 13:47:51,856 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AC8BD40>) completed
+2026-03-04 13:47:51,857 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AC8BD40>)
+2026-03-04 13:47:51,857 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AC8BD40>) completed
+2026-03-04 13:47:51,857 - services.mock_data - INFO - Table products already has 8 rows; skipping mock insert
+2026-03-04 13:47:51,858 - aiosqlite - DEBUG - executing functools.partial(<built-in method commit of sqlite3.Connection object at 0x000002D04AD19F30>)
+2026-03-04 13:47:51,858 - aiosqlite - DEBUG - operation functools.partial(<built-in method commit of sqlite3.Connection object at 0x000002D04AD19F30>) completed
+2026-03-04 13:47:51,858 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002D04AD19F30>)
+2026-03-04 13:47:51,859 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002D04AD19F30>) completed
+2026-03-04 13:47:51,859 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000002D04AD19F30>)
+2026-03-04 13:47:51,859 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000002D04AD19F30>) completed
+2026-03-04 13:47:51,860 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-03-04 13:47:51,860 - services.database - INFO - 🔧 Starting database initialization...
+2026-03-04 13:47:51,860 - core.database - INFO - Starting database initialization...
+2026-03-04 13:47:51,860 - core.database - INFO - Database already initialized
+2026-03-04 13:47:51,860 - services.database - INFO - 🔧 Database connection initialized, now creating tables if tables not exist...
+2026-03-04 13:47:51,861 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-03-04 13:47:51,861 - core.database - INFO - Tables already initialized
+2026-03-04 13:47:51,861 - services.database - INFO - 🔧 Table creation completed
+2026-03-04 13:47:51,861 - services.database - INFO - Database initialized successfully
+2026-03-04 13:47:51,861 - services.database - DEBUG - [DB_OP] Database initialization completed in 0.0009s
+2026-03-04 13:47:51,861 - services.auth - WARNING - Admin user ID or email not configured, skipping admin initialization
+2026-03-04 13:47:51,862 - main - INFO - === Application startup completed successfully ===
+2026-03-04 13:47:51,863 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-03-04 13:47:51,864 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0010s
+2026-03-04 13:47:51,864 - routers.products - DEBUG - Querying productss: query=None, sort=None, skip=0, limit=1000, fields=None
+2026-03-04 13:47:51,866 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x000002D04AD30F40>
+2026-03-04 13:47:51,866 - aiosqlite - DEBUG - operation <function connect.<locals>.connector at 0x000002D04AD30F40> completed
+2026-03-04 13:47:51,867 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002D04AD2DF30>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x000002D04ACFCC20>, deterministic=True)
+2026-03-04 13:47:51,867 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002D04AD2DF30>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x000002D04ACFCC20>, deterministic=True) completed
+2026-03-04 13:47:51,871 - core.auth - DEBUG - Authentication token validated for user hash: 3b14ac7f
+2026-03-04 13:47:51,872 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002D04AD2DF30>, 'floor', 1, <built-in function floor>, deterministic=True)
+2026-03-04 13:47:51,872 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002D04AD2DF30>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2026-03-04 13:47:51,876 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD2DF30>)
+2026-03-04 13:47:51,877 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD2DF30>) completed
+2026-03-04 13:47:51,877 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD4D140>, 'SELECT count(products.id) AS count_1 \nFROM products', ())
+2026-03-04 13:47:51,878 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD4D140>, 'SELECT count(products.id) AS count_1 \nFROM products', ()) completed
+2026-03-04 13:47:51,879 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AD4D140>)
+2026-03-04 13:47:51,879 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AD4D140>) completed
+2026-03-04 13:47:51,879 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AD4D140>)
+2026-03-04 13:47:51,880 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AD4D140>) completed
+2026-03-04 13:47:51,883 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD2DF30>)
+2026-03-04 13:47:51,883 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD2DF30>) completed
+2026-03-04 13:47:51,883 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD14940>, 'SELECT products.id, products.name, products.description, products.price, products.image, products.category, products.size, products.color, products.stock, products.created_at \nFROM products ORDER BY products.id DESC\n LIMIT ? OFFSET ?', (1000, 0))
+2026-03-04 13:47:51,884 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD14940>, 'SELECT products.id, products.name, products.description, products.price, products.image, products.category, products.size, products.color, products.stock, products.created_at \nFROM products ORDER BY products.id DESC\n LIMIT ? OFFSET ?', (1000, 0)) completed
+2026-03-04 13:47:51,885 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AD14940>)
+2026-03-04 13:47:51,885 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AD14940>) completed
+2026-03-04 13:47:51,886 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AD14940>)
+2026-03-04 13:47:51,886 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AD14940>) completed
+2026-03-04 13:47:51,889 - routers.products - DEBUG - Found 8 productss
+2026-03-04 13:47:51,889 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.0259s
+2026-03-04 13:47:51,890 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002D04AD2DF30>)
+2026-03-04 13:47:51,890 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002D04AD2DF30>) completed
+2026-03-04 13:47:51,891 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002D04AD2DF30>)
+2026-03-04 13:47:51,891 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002D04AD2DF30>) completed
+2026-03-04 13:47:51,891 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000002D04AD2DF30>)
+2026-03-04 13:47:51,892 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000002D04AD2DF30>) completed
+2026-03-04 13:47:53,094 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-03-04 13:47:53,094 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0000s
+2026-03-04 13:47:53,094 - routers.products - DEBUG - Querying productss: query=None, sort=None, skip=0, limit=1000, fields=None
+2026-03-04 13:47:53,095 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x000002D04AD30FE0>
+2026-03-04 13:47:53,095 - aiosqlite - DEBUG - operation <function connect.<locals>.connector at 0x000002D04AD30FE0> completed
+2026-03-04 13:47:53,095 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002D04AD2F880>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x000002D04ACFCC20>, deterministic=True)
+2026-03-04 13:47:53,096 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002D04AD2F880>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x000002D04ACFCC20>, deterministic=True) completed
+2026-03-04 13:47:53,096 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002D04AD2F880>, 'floor', 1, <built-in function floor>, deterministic=True)
+2026-03-04 13:47:53,096 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002D04AD2F880>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2026-03-04 13:47:53,097 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD2F880>)
+2026-03-04 13:47:53,097 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD2F880>) completed
+2026-03-04 13:47:53,097 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AC89B40>, 'SELECT count(products.id) AS count_1 \nFROM products', ())
+2026-03-04 13:47:53,098 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AC89B40>, 'SELECT count(products.id) AS count_1 \nFROM products', ()) completed
+2026-03-04 13:47:53,098 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AC89B40>)
+2026-03-04 13:47:53,098 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AC89B40>) completed
+2026-03-04 13:47:53,098 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AC89B40>)
+2026-03-04 13:47:53,098 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AC89B40>) completed
+2026-03-04 13:47:53,099 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD2F880>)
+2026-03-04 13:47:53,100 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD2F880>) completed
+2026-03-04 13:47:53,100 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AC89B40>, 'SELECT products.id, products.name, products.description, products.price, products.image, products.category, products.size, products.color, products.stock, products.created_at \nFROM products ORDER BY products.id DESC\n LIMIT ? OFFSET ?', (1000, 0))
+2026-03-04 13:47:53,100 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AC89B40>, 'SELECT products.id, products.name, products.description, products.price, products.image, products.category, products.size, products.color, products.stock, products.created_at \nFROM products ORDER BY products.id DESC\n LIMIT ? OFFSET ?', (1000, 0)) completed
+2026-03-04 13:47:53,101 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AC89B40>)
+2026-03-04 13:47:53,101 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AC89B40>) completed
+2026-03-04 13:47:53,101 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AC89B40>)
+2026-03-04 13:47:53,102 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AC89B40>) completed
+2026-03-04 13:47:53,102 - routers.products - DEBUG - Found 8 productss
+2026-03-04 13:47:53,102 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.0080s
+2026-03-04 13:47:53,103 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002D04AD2F880>)
+2026-03-04 13:47:53,103 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002D04AD2F880>) completed
+2026-03-04 13:47:53,103 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002D04AD2F880>)
+2026-03-04 13:47:53,103 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002D04AD2F880>) completed
+2026-03-04 13:47:53,104 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000002D04AD2F880>)
+2026-03-04 13:47:53,104 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000002D04AD2F880>) completed
+2026-03-04 13:47:53,403 - core.auth - DEBUG - Authentication token validated for user hash: 8485fccb
+2026-03-04 14:04:50,876 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-03-04 14:04:50,876 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0000s
+2026-03-04 14:04:50,876 - routers.auth - INFO - [login] Login attempt for: admin2@example.com
+2026-03-04 14:04:50,884 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x000002D04AD542C0>
+2026-03-04 14:04:50,884 - aiosqlite - DEBUG - operation <function connect.<locals>.connector at 0x000002D04AD542C0> completed
+2026-03-04 14:04:50,884 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002D04AD2DC60>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x000002D04ACFCC20>, deterministic=True)
+2026-03-04 14:04:50,884 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002D04AD2DC60>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x000002D04ACFCC20>, deterministic=True) completed
+2026-03-04 14:04:50,884 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002D04AD2DC60>, 'floor', 1, <built-in function floor>, deterministic=True)
+2026-03-04 14:04:50,884 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002D04AD2DC60>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2026-03-04 14:04:50,884 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD2DC60>)
+2026-03-04 14:04:50,884 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD2DC60>) completed
+2026-03-04 14:04:50,892 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AC898C0>, 'SELECT users.id, users.email, users.name, users.role, users.created_at, users.last_login, users.hashed_password \nFROM users \nWHERE lower(users.email) = ?', ('admin2@example.com',))
+2026-03-04 14:04:50,892 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AC898C0>, 'SELECT users.id, users.email, users.name, users.role, users.created_at, users.last_login, users.hashed_password \nFROM users \nWHERE lower(users.email) = ?', ('admin2@example.com',)) completed
+2026-03-04 14:04:50,892 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AC898C0>)
+2026-03-04 14:04:50,892 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AC898C0>) completed
+2026-03-04 14:04:50,892 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AC898C0>)
+2026-03-04 14:04:50,892 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AC898C0>) completed
+2026-03-04 14:04:51,193 - core.auth - DEBUG - Authentication token created for user hash: 3b14ac7f
+2026-03-04 14:04:51,193 - routers.auth - INFO - [login] Login successful for user: 6bf4b957-7c2a-467a-b6d6-db32462caaf1
+2026-03-04 14:04:51,194 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.3177s
+2026-03-04 14:04:51,194 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002D04AD2DC60>)
+2026-03-04 14:04:51,194 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002D04AD2DC60>) completed
+2026-03-04 14:04:51,194 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002D04AD2DC60>)
+2026-03-04 14:04:51,194 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002D04AD2DC60>) completed
+2026-03-04 14:04:51,194 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000002D04AD2DC60>)
+2026-03-04 14:04:51,194 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000002D04AD2DC60>) completed
+2026-03-04 14:04:52,176 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-03-04 14:04:52,176 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0006s
+2026-03-04 14:04:52,176 - routers.products - DEBUG - Querying productss: query=None, sort=None, skip=0, limit=100, fields=None
+2026-03-04 14:04:52,176 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x000002D04AD55620>
+2026-03-04 14:04:52,176 - aiosqlite - DEBUG - operation <function connect.<locals>.connector at 0x000002D04AD55620> completed
+2026-03-04 14:04:52,176 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002D04AD2E020>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x000002D04ACFCC20>, deterministic=True)
+2026-03-04 14:04:52,176 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002D04AD2E020>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x000002D04ACFCC20>, deterministic=True) completed
+2026-03-04 14:04:52,176 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002D04AD2E020>, 'floor', 1, <built-in function floor>, deterministic=True)
+2026-03-04 14:04:52,176 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002D04AD2E020>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2026-03-04 14:04:52,176 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD2E020>)
+2026-03-04 14:04:52,176 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD2E020>) completed
+2026-03-04 14:04:52,176 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AC898C0>, 'SELECT count(products.id) AS count_1 \nFROM products', ())
+2026-03-04 14:04:52,184 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AC898C0>, 'SELECT count(products.id) AS count_1 \nFROM products', ()) completed
+2026-03-04 14:04:52,184 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AC898C0>)
+2026-03-04 14:04:52,184 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AC898C0>) completed
+2026-03-04 14:04:52,184 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AC898C0>)
+2026-03-04 14:04:52,184 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AC898C0>) completed
+2026-03-04 14:04:52,184 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD2E020>)
+2026-03-04 14:04:52,184 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD2E020>) completed
+2026-03-04 14:04:52,184 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AC898C0>, 'SELECT products.id, products.name, products.description, products.price, products.image, products.category, products.size, products.color, products.stock, products.created_at \nFROM products ORDER BY products.id DESC\n LIMIT ? OFFSET ?', (100, 0))
+2026-03-04 14:04:52,184 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AC898C0>, 'SELECT products.id, products.name, products.description, products.price, products.image, products.category, products.size, products.color, products.stock, products.created_at \nFROM products ORDER BY products.id DESC\n LIMIT ? OFFSET ?', (100, 0)) completed
+2026-03-04 14:04:52,184 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AC898C0>)
+2026-03-04 14:04:52,184 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AC898C0>) completed
+2026-03-04 14:04:52,184 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AC898C0>)
+2026-03-04 14:04:52,184 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AC898C0>) completed
+2026-03-04 14:04:52,192 - routers.products - DEBUG - Found 8 productss
+2026-03-04 14:04:52,192 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.0166s
+2026-03-04 14:04:52,192 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002D04AD2E020>)
+2026-03-04 14:04:52,192 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002D04AD2E020>) completed
+2026-03-04 14:04:52,192 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002D04AD2E020>)
+2026-03-04 14:04:52,192 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002D04AD2E020>) completed
+2026-03-04 14:04:52,192 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000002D04AD2E020>)
+2026-03-04 14:04:52,192 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000002D04AD2E020>) completed
+2026-03-04 14:04:52,478 - core.auth - DEBUG - Authentication token validated for user hash: 3b14ac7f
+2026-03-04 14:04:53,484 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-03-04 14:04:53,484 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0000s
+2026-03-04 14:04:53,484 - routers.products - DEBUG - Querying productss: query=None, sort=None, skip=0, limit=1000, fields=None
+2026-03-04 14:04:53,484 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x000002D04AD542C0>
+2026-03-04 14:04:53,484 - aiosqlite - DEBUG - operation <function connect.<locals>.connector at 0x000002D04AD542C0> completed
+2026-03-04 14:04:53,484 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002D04AD2F4C0>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x000002D04ACFCC20>, deterministic=True)
+2026-03-04 14:04:53,484 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002D04AD2F4C0>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x000002D04ACFCC20>, deterministic=True) completed
+2026-03-04 14:04:53,484 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002D04AD2F4C0>, 'floor', 1, <built-in function floor>, deterministic=True)
+2026-03-04 14:04:53,484 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002D04AD2F4C0>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2026-03-04 14:04:53,484 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD2F4C0>)
+2026-03-04 14:04:53,484 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD2F4C0>) completed
+2026-03-04 14:04:53,492 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD5C940>, 'SELECT count(products.id) AS count_1 \nFROM products', ())
+2026-03-04 14:04:53,492 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD5C940>, 'SELECT count(products.id) AS count_1 \nFROM products', ()) completed
+2026-03-04 14:04:53,492 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AD5C940>)
+2026-03-04 14:04:53,492 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AD5C940>) completed
+2026-03-04 14:04:53,492 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AD5C940>)
+2026-03-04 14:04:53,492 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AD5C940>) completed
+2026-03-04 14:04:53,492 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD2F4C0>)
+2026-03-04 14:04:53,492 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD2F4C0>) completed
+2026-03-04 14:04:53,492 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD5C940>, 'SELECT products.id, products.name, products.description, products.price, products.image, products.category, products.size, products.color, products.stock, products.created_at \nFROM products ORDER BY products.id DESC\n LIMIT ? OFFSET ?', (1000, 0))
+2026-03-04 14:04:53,492 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD5C940>, 'SELECT products.id, products.name, products.description, products.price, products.image, products.category, products.size, products.color, products.stock, products.created_at \nFROM products ORDER BY products.id DESC\n LIMIT ? OFFSET ?', (1000, 0)) completed
+2026-03-04 14:04:53,492 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AD5C940>)
+2026-03-04 14:04:53,492 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AD5C940>) completed
+2026-03-04 14:04:53,500 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AD5C940>)
+2026-03-04 14:04:53,500 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AD5C940>) completed
+2026-03-04 14:04:53,500 - routers.products - DEBUG - Found 8 productss
+2026-03-04 14:04:53,500 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.0160s
+2026-03-04 14:04:53,500 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002D04AD2F4C0>)
+2026-03-04 14:04:53,500 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002D04AD2F4C0>) completed
+2026-03-04 14:04:53,500 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002D04AD2F4C0>)
+2026-03-04 14:04:53,500 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002D04AD2F4C0>) completed
+2026-03-04 14:04:53,500 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000002D04AD2F4C0>)
+2026-03-04 14:04:53,500 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000002D04AD2F4C0>) completed
+2026-03-04 14:04:56,170 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-03-04 14:04:56,171 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0011s
+2026-03-04 14:04:56,171 - routers.auth - INFO - [login] Login attempt for: sonhynmin4@gmail.com
+2026-03-04 14:04:56,172 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x000002D04ACFF7E0>
+2026-03-04 14:04:56,173 - aiosqlite - DEBUG - operation <function connect.<locals>.connector at 0x000002D04ACFF7E0> completed
+2026-03-04 14:04:56,173 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002D04AD2F4C0>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x000002D04ACFCC20>, deterministic=True)
+2026-03-04 14:04:56,173 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002D04AD2F4C0>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x000002D04ACFCC20>, deterministic=True) completed
+2026-03-04 14:04:56,173 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002D04AD2F4C0>, 'floor', 1, <built-in function floor>, deterministic=True)
+2026-03-04 14:04:56,173 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002D04AD2F4C0>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2026-03-04 14:04:56,173 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD2F4C0>)
+2026-03-04 14:04:56,173 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD2F4C0>) completed
+2026-03-04 14:04:56,173 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD4E3C0>, 'SELECT users.id, users.email, users.name, users.role, users.created_at, users.last_login, users.hashed_password \nFROM users \nWHERE lower(users.email) = ?', ('sonhynmin4@gmail.com',))
+2026-03-04 14:04:56,173 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD4E3C0>, 'SELECT users.id, users.email, users.name, users.role, users.created_at, users.last_login, users.hashed_password \nFROM users \nWHERE lower(users.email) = ?', ('sonhynmin4@gmail.com',)) completed
+2026-03-04 14:04:56,173 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AD4E3C0>)
+2026-03-04 14:04:56,181 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AD4E3C0>) completed
+2026-03-04 14:04:56,181 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AD4E3C0>)
+2026-03-04 14:04:56,181 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AD4E3C0>) completed
+2026-03-04 14:04:56,460 - core.auth - DEBUG - Authentication token created for user hash: 8485fccb
+2026-03-04 14:04:56,460 - routers.auth - INFO - [login] Login successful for user: 1c358d91-8a88-410f-b3aa-e3c4a0eb2770
+2026-03-04 14:04:56,460 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.2899s
+2026-03-04 14:04:56,460 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002D04AD2F4C0>)
+2026-03-04 14:04:56,460 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002D04AD2F4C0>) completed
+2026-03-04 14:04:56,476 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002D04AD2F4C0>)
+2026-03-04 14:04:56,476 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002D04AD2F4C0>) completed
+2026-03-04 14:04:56,476 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000002D04AD2F4C0>)
+2026-03-04 14:04:56,476 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000002D04AD2F4C0>) completed
+2026-03-04 14:04:59,250 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-03-04 14:04:59,250 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0000s
+2026-03-04 14:04:59,250 - routers.products - DEBUG - Querying productss: query=None, sort=None, skip=0, limit=1000, fields=None
+2026-03-04 14:04:59,258 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x000002D04ACFDC60>
+2026-03-04 14:04:59,258 - core.auth - DEBUG - Authentication token validated for user hash: 8485fccb
+2026-03-04 14:04:59,258 - aiosqlite - DEBUG - operation <function connect.<locals>.connector at 0x000002D04ACFDC60> completed
+2026-03-04 14:04:59,259 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002D04AD2F2E0>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x000002D04ACFCC20>, deterministic=True)
+2026-03-04 14:04:59,259 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002D04AD2F2E0>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x000002D04ACFCC20>, deterministic=True) completed
+2026-03-04 14:04:59,259 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002D04AD2F2E0>, 'floor', 1, <built-in function floor>, deterministic=True)
+2026-03-04 14:04:59,259 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002D04AD2F2E0>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2026-03-04 14:04:59,259 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD2F2E0>)
+2026-03-04 14:04:59,259 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD2F2E0>) completed
+2026-03-04 14:04:59,259 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD4FF40>, 'SELECT count(products.id) AS count_1 \nFROM products', ())
+2026-03-04 14:04:59,259 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD4FF40>, 'SELECT count(products.id) AS count_1 \nFROM products', ()) completed
+2026-03-04 14:04:59,259 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AD4FF40>)
+2026-03-04 14:04:59,259 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AD4FF40>) completed
+2026-03-04 14:04:59,259 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AD4FF40>)
+2026-03-04 14:04:59,267 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AD4FF40>) completed
+2026-03-04 14:04:59,267 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD2F2E0>)
+2026-03-04 14:04:59,267 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD2F2E0>) completed
+2026-03-04 14:04:59,267 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD4FF40>, 'SELECT products.id, products.name, products.description, products.price, products.image, products.category, products.size, products.color, products.stock, products.created_at \nFROM products ORDER BY products.id DESC\n LIMIT ? OFFSET ?', (1000, 0))
+2026-03-04 14:04:59,267 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD4FF40>, 'SELECT products.id, products.name, products.description, products.price, products.image, products.category, products.size, products.color, products.stock, products.created_at \nFROM products ORDER BY products.id DESC\n LIMIT ? OFFSET ?', (1000, 0)) completed
+2026-03-04 14:04:59,267 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AD4FF40>)
+2026-03-04 14:04:59,267 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AD4FF40>) completed
+2026-03-04 14:04:59,267 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AD4FF40>)
+2026-03-04 14:04:59,267 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AD4FF40>) completed
+2026-03-04 14:04:59,275 - routers.products - DEBUG - Found 8 productss
+2026-03-04 14:04:59,275 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.0249s
+2026-03-04 14:04:59,275 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002D04AD2F2E0>)
+2026-03-04 14:04:59,275 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002D04AD2F2E0>) completed
+2026-03-04 14:04:59,275 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002D04AD2F2E0>)
+2026-03-04 14:04:59,275 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002D04AD2F2E0>) completed
+2026-03-04 14:04:59,275 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000002D04AD2F2E0>)
+2026-03-04 14:04:59,275 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000002D04AD2F2E0>) completed
+2026-03-04 14:11:33,085 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-03-04 14:11:33,085 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0000s
+2026-03-04 14:11:33,085 - routers.products - DEBUG - Querying productss: query=None, sort=None, skip=0, limit=1000, fields=None
+2026-03-04 14:11:33,085 - aiosqlite - DEBUG - executing <function connect.<locals>.connector at 0x000002D04ACFFA60>
+2026-03-04 14:11:33,085 - aiosqlite - DEBUG - operation <function connect.<locals>.connector at 0x000002D04ACFFA60> completed
+2026-03-04 14:11:33,085 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002D04AD1BC40>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x000002D04ACFCC20>, deterministic=True)
+2026-03-04 14:11:33,085 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002D04AD1BC40>, 'regexp', 2, <function SQLiteDialect_pysqlite.on_connect.<locals>.regexp at 0x000002D04ACFCC20>, deterministic=True) completed
+2026-03-04 14:11:33,085 - aiosqlite - DEBUG - executing functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002D04AD1BC40>, 'floor', 1, <built-in function floor>, deterministic=True)
+2026-03-04 14:11:33,085 - aiosqlite - DEBUG - operation functools.partial(<built-in method create_function of sqlite3.Connection object at 0x000002D04AD1BC40>, 'floor', 1, <built-in function floor>, deterministic=True) completed
+2026-03-04 14:11:33,085 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD1BC40>)
+2026-03-04 14:11:33,085 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD1BC40>) completed
+2026-03-04 14:11:33,093 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD4D540>, 'SELECT count(products.id) AS count_1 \nFROM products', ())
+2026-03-04 14:11:33,093 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD4D540>, 'SELECT count(products.id) AS count_1 \nFROM products', ()) completed
+2026-03-04 14:11:33,094 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AD4D540>)
+2026-03-04 14:11:33,094 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AD4D540>) completed
+2026-03-04 14:11:33,094 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AD4D540>)
+2026-03-04 14:11:33,094 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AD4D540>) completed
+2026-03-04 14:11:33,094 - aiosqlite - DEBUG - executing functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD1BC40>)
+2026-03-04 14:11:33,094 - aiosqlite - DEBUG - operation functools.partial(<built-in method cursor of sqlite3.Connection object at 0x000002D04AD1BC40>) completed
+2026-03-04 14:11:33,094 - aiosqlite - DEBUG - executing functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD4D540>, 'SELECT products.id, products.name, products.description, products.price, products.image, products.category, products.size, products.color, products.stock, products.created_at \nFROM products ORDER BY products.id DESC\n LIMIT ? OFFSET ?', (1000, 0))
+2026-03-04 14:11:33,094 - aiosqlite - DEBUG - operation functools.partial(<built-in method execute of sqlite3.Cursor object at 0x000002D04AD4D540>, 'SELECT products.id, products.name, products.description, products.price, products.image, products.category, products.size, products.color, products.stock, products.created_at \nFROM products ORDER BY products.id DESC\n LIMIT ? OFFSET ?', (1000, 0)) completed
+2026-03-04 14:11:33,094 - aiosqlite - DEBUG - executing functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AD4D540>)
+2026-03-04 14:11:33,094 - aiosqlite - DEBUG - operation functools.partial(<built-in method fetchall of sqlite3.Cursor object at 0x000002D04AD4D540>) completed
+2026-03-04 14:11:33,094 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AD4D540>)
+2026-03-04 14:11:33,094 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Cursor object at 0x000002D04AD4D540>) completed
+2026-03-04 14:11:33,102 - routers.products - DEBUG - Found 8 productss
+2026-03-04 14:11:33,102 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.0173s
+2026-03-04 14:11:33,102 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002D04AD1BC40>)
+2026-03-04 14:11:33,102 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002D04AD1BC40>) completed
+2026-03-04 14:11:33,102 - aiosqlite - DEBUG - executing functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002D04AD1BC40>)
+2026-03-04 14:11:33,102 - aiosqlite - DEBUG - operation functools.partial(<built-in method rollback of sqlite3.Connection object at 0x000002D04AD1BC40>) completed
+2026-03-04 14:11:33,102 - aiosqlite - DEBUG - executing functools.partial(<built-in method close of sqlite3.Connection object at 0x000002D04AD1BC40>)
+2026-03-04 14:11:33,102 - aiosqlite - DEBUG - operation functools.partial(<built-in method close of sqlite3.Connection object at 0x000002D04AD1BC40>) completed
+2026-03-04 14:11:33,386 - core.auth - DEBUG - Authentication token validated for user hash: 8485fccb
