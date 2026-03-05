@@ -1,0 +1,29 @@
+2026-03-05 13:23:25,297 - main - INFO - === Logging system initialized ===
+2026-03-05 13:23:25,298 - main - INFO - Log file: logs/app_20260305_132325.log
+2026-03-05 13:23:25,298 - main - INFO - Log level: INFO
+2026-03-05 13:23:25,298 - main - INFO - Timestamp: 20260305_132325
+2026-03-05 13:23:25,889 - main - INFO - Included router: routers.aihub.router
+2026-03-05 13:23:25,922 - main - INFO - Included router: routers.auth.router
+2026-03-05 13:23:25,924 - main - INFO - Included router: routers.health.router
+2026-03-05 13:23:25,932 - main - INFO - Included router: routers.orders.router
+2026-03-05 13:23:25,978 - main - INFO - Included router: routers.products.router
+2026-03-05 13:23:25,992 - main - INFO - Included router: routers.settings.router
+2026-03-05 13:23:26,039 - main - INFO - Included router: routers.storage.router
+2026-03-05 13:23:26,046 - main - INFO - Included router: routers.user.router
+2026-03-05 13:23:26,048 - main - INFO - === Application startup initiated ===
+2026-03-05 13:23:26,048 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-03-05 13:23:26,048 - services.database - INFO - 🔧 Starting database initialization...
+2026-03-05 13:23:26,049 - core.database - INFO - Starting database initialization...
+2026-03-05 13:23:26,049 - core.database - INFO - Normalizing database URL for async compatibility...
+2026-03-05 13:23:26,050 - core.database - WARNING - Adjusted database URL driver for async compatibility
+2026-03-05 13:23:26,050 - core.database - INFO - Creating async database engine...
+2026-03-05 13:23:26,050 - core.database - INFO - Using QueuePool with connection pooling for postgresql+asyncpg
+2026-03-05 13:23:26,098 - core.database - INFO - Database engine created successfully
+2026-03-05 13:23:26,098 - core.database - INFO - Creating async session maker...
+2026-03-05 13:23:26,099 - core.database - INFO - Async session maker created successfully
+2026-03-05 13:23:26,099 - core.database - INFO - Database connection initialized successfully
+2026-03-05 13:23:26,099 - services.database - INFO - 🔧 Database connection initialized, now creating tables if tables not exist...
+2026-03-05 13:23:26,099 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-03-05 13:23:26,099 - core.database - INFO - 🔧 Starting table creation...
+2026-03-05 13:23:26,100 - core.database - ERROR - Failed to create tables: connect() got an unexpected keyword argument 'pgbouncer'
+2026-03-05 13:23:26,100 - services.database - ERROR - Failed to initialize database: connect() got an unexpected keyword argument 'pgbouncer'
