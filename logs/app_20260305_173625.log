@@ -1,0 +1,51 @@
+2026-03-05 17:36:25,944 - main - INFO - === Logging system initialized ===
+2026-03-05 17:36:25,944 - main - INFO - Log file: logs/app_20260305_173625.log
+2026-03-05 17:36:25,944 - main - INFO - Log level: INFO
+2026-03-05 17:36:25,944 - main - INFO - Timestamp: 20260305_173625
+2026-03-05 17:36:26,430 - main - INFO - Included router: routers.aihub.router
+2026-03-05 17:36:26,462 - main - INFO - Included router: routers.auth.router
+2026-03-05 17:36:26,462 - main - INFO - Included router: routers.health.router
+2026-03-05 17:36:26,470 - main - INFO - Included router: routers.orders.router
+2026-03-05 17:36:26,528 - main - INFO - Included router: routers.products.router
+2026-03-05 17:36:26,543 - main - INFO - Included router: routers.settings.router
+2026-03-05 17:36:26,595 - main - INFO - Included router: routers.storage.router
+2026-03-05 17:36:26,603 - main - INFO - Included router: routers.user.router
+2026-03-05 17:36:26,611 - main - INFO - === Application startup initiated ===
+2026-03-05 17:36:26,611 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-03-05 17:36:26,611 - services.database - INFO - 🔧 Starting database initialization...
+2026-03-05 17:36:26,611 - core.database - INFO - Starting database initialization...
+2026-03-05 17:36:26,611 - core.database - INFO - Normalizing database URL for async compatibility...
+2026-03-05 17:36:26,611 - core.database - INFO - Creating async database engine...
+2026-03-05 17:36:26,611 - core.database - INFO - Using QueuePool with connection pooling for postgresql+asyncpg
+2026-03-05 17:36:26,611 - core.database - DEBUG - final engine_kwargs: {'echo': False, 'connect_args': {'statement_cache_size': 0}, 'pool_pre_ping': True, 'pool_size': 10, 'max_overflow': 20, 'pool_recycle': 3600, 'pool_timeout': 30}
+2026-03-05 17:36:26,659 - core.database - INFO - Database engine created successfully
+2026-03-05 17:36:26,659 - core.database - DEBUG - engine_kwargs: {'echo': False, 'connect_args': {'statement_cache_size': 0}, 'pool_pre_ping': True, 'pool_size': 10, 'max_overflow': 20, 'pool_recycle': 3600, 'pool_timeout': 30}
+2026-03-05 17:36:26,659 - core.database - INFO - Creating async session maker...
+2026-03-05 17:36:26,659 - core.database - INFO - Async session maker created successfully
+2026-03-05 17:36:26,659 - core.database - INFO - Database connection initialized successfully
+2026-03-05 17:36:26,659 - services.database - INFO - 🔧 Database connection initialized, now creating tables if tables not exist...
+2026-03-05 17:36:26,659 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-03-05 17:36:26,659 - core.database - INFO - 🔧 Starting table creation...
+2026-03-05 17:36:29,331 - core.database - INFO - Tables initialized successfully
+2026-03-05 17:36:29,331 - core.database - DEBUG - [DB_OP] Create tables completed in 2.6723s
+2026-03-05 17:36:29,427 - services.database - INFO - 🔧 Table creation completed
+2026-03-05 17:36:29,427 - services.database - INFO - Database initialized successfully
+2026-03-05 17:36:29,427 - services.database - DEBUG - [DB_OP] Database initialization completed in 2.8160s
+2026-03-05 17:36:29,435 - services.mock_data - INFO - Processing mock data file products.json for table products
+2026-03-05 17:36:32,545 - services.mock_data - INFO - Table products already has 8 rows; skipping mock insert
+2026-03-05 17:36:32,637 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-03-05 17:36:32,637 - services.database - INFO - 🔧 Starting database initialization...
+2026-03-05 17:36:32,637 - core.database - INFO - Starting database initialization...
+2026-03-05 17:36:32,637 - core.database - INFO - Database already initialized
+2026-03-05 17:36:32,637 - services.database - INFO - 🔧 Database connection initialized, now creating tables if tables not exist...
+2026-03-05 17:36:32,645 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-03-05 17:36:32,645 - core.database - INFO - Tables already initialized
+2026-03-05 17:36:32,645 - services.database - INFO - 🔧 Table creation completed
+2026-03-05 17:36:32,645 - services.database - INFO - Database initialized successfully
+2026-03-05 17:36:32,645 - services.database - DEBUG - [DB_OP] Database initialization completed in 0.0078s
+2026-03-05 17:36:32,645 - services.auth - WARNING - Admin user ID or email not configured, skipping admin initialization
+2026-03-05 17:36:32,645 - main - INFO - === Application startup completed successfully ===
+2026-03-05 17:36:38,281 - services.database - DEBUG - [DB_OP] Starting database close
+2026-03-05 17:36:38,375 - core.database - INFO - Database connection closed and engine disposed
+2026-03-05 17:36:38,375 - services.database - INFO - Database connections closed
+2026-03-05 17:36:38,375 - services.database - DEBUG - [DB_OP] Database close completed in 0.0937s

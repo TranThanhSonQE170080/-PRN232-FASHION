@@ -2,7 +2,7 @@ import json
 import sys
 from urllib import request, error
 
-url = 'http://127.0.0.1:8000/api/v1/auth/login'
+url = 'https://prn232-fashion.onrender.com/api/v1/auth/login'
 data = json.dumps({'email': 'admin@gmail.com', 'password': 'Password123!'}).encode('utf-8')
 req = request.Request(url, data=data, headers={'Content-Type': 'application/json'}, method='POST')
 

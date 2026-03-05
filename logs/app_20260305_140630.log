@@ -1,0 +1,31 @@
+2026-03-05 14:06:30,558 - main - INFO - === Logging system initialized ===
+2026-03-05 14:06:30,558 - main - INFO - Log file: logs/app_20260305_140630.log
+2026-03-05 14:06:30,558 - main - INFO - Log level: INFO
+2026-03-05 14:06:30,558 - main - INFO - Timestamp: 20260305_140630
+2026-03-05 14:06:30,824 - main - INFO - Included router: routers.aihub.router
+2026-03-05 14:06:30,859 - main - INFO - Included router: routers.auth.router
+2026-03-05 14:06:30,860 - main - INFO - Included router: routers.health.router
+2026-03-05 14:06:30,867 - main - INFO - Included router: routers.orders.router
+2026-03-05 14:06:30,914 - main - INFO - Included router: routers.products.router
+2026-03-05 14:06:30,927 - main - INFO - Included router: routers.settings.router
+2026-03-05 14:06:30,972 - main - INFO - Included router: routers.storage.router
+2026-03-05 14:06:30,975 - main - INFO - Included router: routers.user.router
+2026-03-05 14:06:30,975 - main - INFO - === Application startup initiated ===
+2026-03-05 14:06:30,975 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-03-05 14:06:30,975 - services.database - INFO - 🔧 Starting database initialization...
+2026-03-05 14:06:30,975 - core.database - INFO - Starting database initialization...
+2026-03-05 14:06:30,975 - core.database - INFO - Normalizing database URL for async compatibility...
+2026-03-05 14:06:30,975 - core.database - WARNING - Adjusted database URL driver for async compatibility
+2026-03-05 14:06:30,975 - core.database - INFO - Creating async database engine...
+2026-03-05 14:06:30,975 - core.database - INFO - Using QueuePool with connection pooling for postgresql+asyncpg
+2026-03-05 14:06:30,975 - core.database - DEBUG - final engine_kwargs: {'echo': False, 'connect_args': {'statement_cache_size': 0}, 'pool_pre_ping': True, 'pool_size': 10, 'max_overflow': 20, 'pool_recycle': 3600, 'pool_timeout': 30}
+2026-03-05 14:06:31,010 - core.database - INFO - Database engine created successfully
+2026-03-05 14:06:31,010 - core.database - DEBUG - engine_kwargs: {'echo': False, 'connect_args': {'statement_cache_size': 0}, 'pool_pre_ping': True, 'pool_size': 10, 'max_overflow': 20, 'pool_recycle': 3600, 'pool_timeout': 30}
+2026-03-05 14:06:31,010 - core.database - INFO - Creating async session maker...
+2026-03-05 14:06:31,010 - core.database - INFO - Async session maker created successfully
+2026-03-05 14:06:31,010 - core.database - INFO - Database connection initialized successfully
+2026-03-05 14:06:31,010 - services.database - INFO - 🔧 Database connection initialized, now creating tables if tables not exist...
+2026-03-05 14:06:31,010 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-03-05 14:06:31,010 - core.database - INFO - 🔧 Starting table creation...
+2026-03-05 14:06:32,140 - core.database - ERROR - Failed to create tables: password authentication failed for user "postgres"
+2026-03-05 14:06:32,140 - services.database - ERROR - Failed to initialize database: password authentication failed for user "postgres"

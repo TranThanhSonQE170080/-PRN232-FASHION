@@ -37,7 +37,20 @@ class DatabaseManager:
         This guards against env overrides like DATABASE_URL using sync drivers
         (e.g., sqlite:/// or postgresql://), which would otherwise load 'pysqlite' or
         other sync drivers and break async engine initialization.
+
+        Additionally, strip unsupported query parameters such as "pgbouncer=true"
+        which asyncpg does not accept. This makes Render/Supabase URLs work out of
+        the box.
         """
+        # remove unsupported query params before parsing
+        if raw_url and "?" in raw_url:
+            base, query = raw_url.split("?", 1)
+            # only keep query parts that are safe (no pgbouncer)
+            filtered = "".join(
+                part for part in query.split("&") if not part.startswith("pgbouncer=")
+            )
+            raw_url = base + (f"?{filtered}" if filtered else "")
+
         try:
             url = make_url(raw_url)
         except Exception as e:
@@ -116,6 +129,21 @@ class DatabaseManager:
                 "echo": settings.debug,
             }
 
+            # For asyncpg driver we disable the statement cache. This prevents
+            # `Asyncpg` from caching prepared statements and avoids duplicate
+            # names when the connection is reused behind pgbouncer/pooler.
+            #
+            # Disable caching alone does not stop the very first PREPARE call,
+            # which may still trigger a duplicate‑statement error under certain
+            # pool modes. The more reliable fix is to avoid routing through
+            # pgbouncer/pooler (use the direct DB host) or use asyncpg's own
+            # connection pool. However setting the cache to zero is still
+            # beneficial for pooled environments.
+            if "+asyncpg" in database_url:
+                engine_kwargs.setdefault("connect_args", {})
+                ca = engine_kwargs["connect_args"]
+                ca["statement_cache_size"] = 0
+
             # Check if we're in a Lambda environment
             is_lambda = bool(
                 os.environ.get("AWS_LAMBDA_FUNCTION_NAME")
@@ -137,8 +165,10 @@ class DatabaseManager:
                 })
                 logger.info(f"Using QueuePool with connection pooling for {driver_name}")
 
+            logger.debug(f"final engine_kwargs: {engine_kwargs}")
             self.engine = create_async_engine(database_url, **engine_kwargs)
             logger.info("Database engine created successfully")
+            logger.debug(f"engine_kwargs: {engine_kwargs}")
 
             logger.info("Creating async session maker...")
             self.async_session_maker = async_sessionmaker(self.engine, class_=AsyncSession, expire_on_commit=False)

@@ -1,0 +1,56 @@
+2026-03-05 13:39:32,490 - main - INFO - === Logging system initialized ===
+2026-03-05 13:39:32,490 - main - INFO - Log file: logs/app_20260305_133932.log
+2026-03-05 13:39:32,490 - main - INFO - Log level: INFO
+2026-03-05 13:39:32,490 - main - INFO - Timestamp: 20260305_133932
+2026-03-05 13:39:32,761 - main - INFO - Included router: routers.aihub.router
+2026-03-05 13:39:32,793 - main - INFO - Included router: routers.auth.router
+2026-03-05 13:39:32,794 - main - INFO - Included router: routers.health.router
+2026-03-05 13:39:32,802 - main - INFO - Included router: routers.orders.router
+2026-03-05 13:39:32,838 - main - INFO - Included router: routers.products.router
+2026-03-05 13:39:32,852 - main - INFO - Included router: routers.settings.router
+2026-03-05 13:39:32,886 - main - INFO - Included router: routers.storage.router
+2026-03-05 13:39:32,894 - main - INFO - Included router: routers.user.router
+2026-03-05 13:39:32,896 - main - INFO - === Application startup initiated ===
+2026-03-05 13:39:32,896 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-03-05 13:39:32,896 - services.database - INFO - 🔧 Starting database initialization...
+2026-03-05 13:39:32,896 - core.database - INFO - Starting database initialization...
+2026-03-05 13:39:32,896 - core.database - INFO - Normalizing database URL for async compatibility...
+2026-03-05 13:39:32,897 - core.database - INFO - Creating async database engine...
+2026-03-05 13:39:32,897 - core.database - INFO - Using QueuePool with connection pooling for postgresql+asyncpg
+2026-03-05 13:39:32,925 - core.database - INFO - Database engine created successfully
+2026-03-05 13:39:32,925 - core.database - INFO - Creating async session maker...
+2026-03-05 13:39:32,925 - core.database - INFO - Async session maker created successfully
+2026-03-05 13:39:32,925 - core.database - INFO - Database connection initialized successfully
+2026-03-05 13:39:32,925 - services.database - INFO - 🔧 Database connection initialized, now creating tables if tables not exist...
+2026-03-05 13:39:32,925 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-03-05 13:39:32,925 - core.database - INFO - 🔧 Starting table creation...
+2026-03-05 13:39:33,845 - core.database - ERROR - Failed to create tables: prepared statement "__asyncpg_stmt_1__" already exists
+HINT:  
+NOTE: pgbouncer with pool_mode set to "transaction" or
+"statement" does not support prepared statements properly.
+You have two options:
+
+* if you are using pgbouncer for connection pooling to a
+  single server, switch to the connection pool functionality
+  provided by asyncpg, it is a much better option for this
+  purpose;
+
+* if you have no option of avoiding the use of pgbouncer,
+  then you can set statement_cache_size to 0 when creating
+  the asyncpg connection object.
+
+2026-03-05 13:39:33,845 - services.database - ERROR - Failed to initialize database: prepared statement "__asyncpg_stmt_1__" already exists
+HINT:  
+NOTE: pgbouncer with pool_mode set to "transaction" or
+"statement" does not support prepared statements properly.
+You have two options:
+
+* if you are using pgbouncer for connection pooling to a
+  single server, switch to the connection pool functionality
+  provided by asyncpg, it is a much better option for this
+  purpose;
+
+* if you have no option of avoiding the use of pgbouncer,
+  then you can set statement_cache_size to 0 when creating
+  the asyncpg connection object.
+

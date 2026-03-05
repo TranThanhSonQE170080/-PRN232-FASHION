@@ -1,0 +1,30 @@
+2026-03-05 13:47:27,370 - main - INFO - === Logging system initialized ===
+2026-03-05 13:47:27,370 - main - INFO - Log file: logs/app_20260305_134727.log
+2026-03-05 13:47:27,370 - main - INFO - Log level: INFO
+2026-03-05 13:47:27,370 - main - INFO - Timestamp: 20260305_134727
+2026-03-05 13:47:27,803 - main - INFO - Included router: routers.aihub.router
+2026-03-05 13:47:27,823 - main - INFO - Included router: routers.auth.router
+2026-03-05 13:47:27,825 - main - INFO - Included router: routers.health.router
+2026-03-05 13:47:27,830 - main - INFO - Included router: routers.orders.router
+2026-03-05 13:47:27,874 - main - INFO - Included router: routers.products.router
+2026-03-05 13:47:27,887 - main - INFO - Included router: routers.settings.router
+2026-03-05 13:47:27,928 - main - INFO - Included router: routers.storage.router
+2026-03-05 13:47:27,928 - main - INFO - Included router: routers.user.router
+2026-03-05 13:47:27,935 - main - INFO - === Application startup initiated ===
+2026-03-05 13:47:27,935 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-03-05 13:47:27,935 - services.database - INFO - 🔧 Starting database initialization...
+2026-03-05 13:47:27,935 - core.database - INFO - Starting database initialization...
+2026-03-05 13:47:27,935 - core.database - INFO - Normalizing database URL for async compatibility...
+2026-03-05 13:47:27,935 - core.database - INFO - Creating async database engine...
+2026-03-05 13:47:27,935 - core.database - INFO - Using QueuePool with connection pooling for postgresql+asyncpg
+2026-03-05 13:47:27,935 - core.database - DEBUG - final engine_kwargs: {'echo': False, 'connect_args': {'statement_cache_size': 0, 'prepare_threshold': 0}, 'pool_pre_ping': True, 'pool_size': 10, 'max_overflow': 20, 'pool_recycle': 3600, 'pool_timeout': 30}
+2026-03-05 13:47:27,969 - core.database - INFO - Database engine created successfully
+2026-03-05 13:47:27,969 - core.database - DEBUG - engine_kwargs: {'echo': False, 'connect_args': {'statement_cache_size': 0, 'prepare_threshold': 0}, 'pool_pre_ping': True, 'pool_size': 10, 'max_overflow': 20, 'pool_recycle': 3600, 'pool_timeout': 30}
+2026-03-05 13:47:27,969 - core.database - INFO - Creating async session maker...
+2026-03-05 13:47:27,969 - core.database - INFO - Async session maker created successfully
+2026-03-05 13:47:27,969 - core.database - INFO - Database connection initialized successfully
+2026-03-05 13:47:27,969 - services.database - INFO - 🔧 Database connection initialized, now creating tables if tables not exist...
+2026-03-05 13:47:27,969 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-03-05 13:47:27,969 - core.database - INFO - 🔧 Starting table creation...
+2026-03-05 13:47:27,976 - core.database - ERROR - Failed to create tables: connect() got an unexpected keyword argument 'prepare_threshold'
+2026-03-05 13:47:27,976 - services.database - ERROR - Failed to initialize database: connect() got an unexpected keyword argument 'prepare_threshold'

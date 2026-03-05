@@ -1,0 +1,62 @@
+2026-03-05 13:46:37,731 - main - INFO - === Logging system initialized ===
+2026-03-05 13:46:37,731 - main - INFO - Log file: logs/app_20260305_134637.log
+2026-03-05 13:46:37,731 - main - INFO - Log level: INFO
+2026-03-05 13:46:37,731 - main - INFO - Timestamp: 20260305_134637
+2026-03-05 13:46:38,010 - main - INFO - Included router: routers.aihub.router
+2026-03-05 13:46:38,028 - main - INFO - Included router: routers.auth.router
+2026-03-05 13:46:38,028 - main - INFO - Included router: routers.health.router
+2026-03-05 13:46:38,037 - main - INFO - Included router: routers.orders.router
+2026-03-05 13:46:38,074 - main - INFO - Included router: routers.products.router
+2026-03-05 13:46:38,088 - main - INFO - Included router: routers.settings.router
+2026-03-05 13:46:38,124 - main - INFO - Included router: routers.storage.router
+2026-03-05 13:46:38,130 - main - INFO - Included router: routers.user.router
+2026-03-05 13:46:38,132 - main - INFO - === Application startup initiated ===
+2026-03-05 13:46:38,132 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-03-05 13:46:38,132 - services.database - INFO - 🔧 Starting database initialization...
+2026-03-05 13:46:38,133 - core.database - INFO - Starting database initialization...
+2026-03-05 13:46:38,133 - core.database - INFO - Normalizing database URL for async compatibility...
+2026-03-05 13:46:38,133 - core.database - INFO - Creating async database engine...
+2026-03-05 13:46:38,133 - core.database - INFO - Using QueuePool with connection pooling for postgresql+asyncpg
+2026-03-05 13:46:38,134 - core.database - DEBUG - final engine_kwargs: {'echo': False, 'connect_args': {'statement_cache_size': 0}, 'pool_pre_ping': True, 'pool_size': 10, 'max_overflow': 20, 'pool_recycle': 3600, 'pool_timeout': 30}
+2026-03-05 13:46:38,170 - core.database - INFO - Database engine created successfully
+2026-03-05 13:46:38,170 - core.database - DEBUG - engine_kwargs: {'echo': False, 'connect_args': {'statement_cache_size': 0}, 'pool_pre_ping': True, 'pool_size': 10, 'max_overflow': 20, 'pool_recycle': 3600, 'pool_timeout': 30}
+2026-03-05 13:46:38,170 - core.database - INFO - Creating async session maker...
+2026-03-05 13:46:38,170 - core.database - INFO - Async session maker created successfully
+2026-03-05 13:46:38,170 - core.database - INFO - Database connection initialized successfully
+2026-03-05 13:46:38,171 - services.database - INFO - 🔧 Database connection initialized, now creating tables if tables not exist...
+2026-03-05 13:46:38,171 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-03-05 13:46:38,171 - core.database - INFO - 🔧 Starting table creation...
+2026-03-05 13:46:39,657 - core.database - ERROR - Failed to create tables: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.DuplicatePreparedStatementError'>: prepared statement "__asyncpg_stmt_1__" already exists
+HINT:  
+NOTE: pgbouncer with pool_mode set to "transaction" or
+"statement" does not support prepared statements properly.
+You have two options:
+
+* if you are using pgbouncer for connection pooling to a
+  single server, switch to the connection pool functionality
+  provided by asyncpg, it is a much better option for this
+  purpose;
+
+* if you have no option of avoiding the use of pgbouncer,
+  then you can set statement_cache_size to 0 when creating
+  the asyncpg connection object.
+
+[SQL: select pg_catalog.version()]
+(Background on this error at: https://sqlalche.me/e/20/f405)
+2026-03-05 13:46:39,663 - services.database - ERROR - Failed to initialize database: (sqlalchemy.dialects.postgresql.asyncpg.ProgrammingError) <class 'asyncpg.exceptions.DuplicatePreparedStatementError'>: prepared statement "__asyncpg_stmt_1__" already exists
+HINT:  
+NOTE: pgbouncer with pool_mode set to "transaction" or
+"statement" does not support prepared statements properly.
+You have two options:
+
+* if you are using pgbouncer for connection pooling to a
+  single server, switch to the connection pool functionality
+  provided by asyncpg, it is a much better option for this
+  purpose;
+
+* if you have no option of avoiding the use of pgbouncer,
+  then you can set statement_cache_size to 0 when creating
+  the asyncpg connection object.
+
+[SQL: select pg_catalog.version()]
+(Background on this error at: https://sqlalche.me/e/20/f405)

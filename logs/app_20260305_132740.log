@@ -1,0 +1,80 @@
+2026-03-05 13:27:40,053 - main - INFO - === Logging system initialized ===
+2026-03-05 13:27:40,053 - main - INFO - Log file: logs/app_20260305_132740.log
+2026-03-05 13:27:40,053 - main - INFO - Log level: INFO
+2026-03-05 13:27:40,054 - main - INFO - Timestamp: 20260305_132740
+2026-03-05 13:27:40,333 - main - INFO - Included router: routers.aihub.router
+2026-03-05 13:27:40,353 - main - INFO - Included router: routers.auth.router
+2026-03-05 13:27:40,355 - main - INFO - Included router: routers.health.router
+2026-03-05 13:27:40,361 - main - INFO - Included router: routers.orders.router
+2026-03-05 13:27:40,397 - main - INFO - Included router: routers.products.router
+2026-03-05 13:27:40,410 - main - INFO - Included router: routers.settings.router
+2026-03-05 13:27:40,447 - main - INFO - Included router: routers.storage.router
+2026-03-05 13:27:40,452 - main - INFO - Included router: routers.user.router
+2026-03-05 13:27:40,453 - main - INFO - === Application startup initiated ===
+2026-03-05 13:27:40,454 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-03-05 13:27:40,454 - services.database - INFO - 🔧 Starting database initialization...
+2026-03-05 13:27:40,454 - core.database - INFO - Starting database initialization...
+2026-03-05 13:27:40,454 - core.database - INFO - Normalizing database URL for async compatibility...
+2026-03-05 13:27:40,455 - core.database - INFO - Creating async database engine...
+2026-03-05 13:27:40,455 - core.database - INFO - Using QueuePool with connection pooling for postgresql+asyncpg
+2026-03-05 13:27:40,486 - core.database - INFO - Database engine created successfully
+2026-03-05 13:27:40,486 - core.database - INFO - Creating async session maker...
+2026-03-05 13:27:40,487 - core.database - INFO - Async session maker created successfully
+2026-03-05 13:27:40,487 - core.database - INFO - Database connection initialized successfully
+2026-03-05 13:27:40,487 - services.database - INFO - 🔧 Database connection initialized, now creating tables if tables not exist...
+2026-03-05 13:27:40,487 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-03-05 13:27:40,487 - core.database - INFO - 🔧 Starting table creation...
+2026-03-05 13:27:43,538 - core.database - INFO - Tables initialized successfully
+2026-03-05 13:27:43,539 - core.database - DEBUG - [DB_OP] Create tables completed in 3.0524s
+2026-03-05 13:27:43,641 - services.database - INFO - 🔧 Table creation completed
+2026-03-05 13:27:43,642 - services.database - INFO - Database initialized successfully
+2026-03-05 13:27:43,642 - services.database - DEBUG - [DB_OP] Database initialization completed in 3.1876s
+2026-03-05 13:27:43,642 - services.mock_data - INFO - Processing mock data file products.json for table products
+2026-03-05 13:27:46,873 - services.mock_data - INFO - Table products already has 8 rows; skipping mock insert
+2026-03-05 13:27:46,985 - services.database - DEBUG - [DB_OP] Starting database initialization
+2026-03-05 13:27:46,985 - services.database - INFO - 🔧 Starting database initialization...
+2026-03-05 13:27:46,985 - core.database - INFO - Starting database initialization...
+2026-03-05 13:27:46,986 - core.database - INFO - Database already initialized
+2026-03-05 13:27:46,986 - services.database - INFO - 🔧 Database connection initialized, now creating tables if tables not exist...
+2026-03-05 13:27:46,986 - core.database - DEBUG - [DB_OP] Starting create_tables
+2026-03-05 13:27:46,987 - core.database - INFO - Tables already initialized
+2026-03-05 13:27:46,987 - services.database - INFO - 🔧 Table creation completed
+2026-03-05 13:27:46,987 - services.database - INFO - Database initialized successfully
+2026-03-05 13:27:46,987 - services.database - DEBUG - [DB_OP] Database initialization completed in 0.0018s
+2026-03-05 13:27:46,987 - services.auth - WARNING - Admin user ID or email not configured, skipping admin initialization
+2026-03-05 13:27:46,988 - main - INFO - === Application startup completed successfully ===
+2026-03-05 13:27:48,030 - core.database - DEBUG - [DB_OP] Starting get_db session creation
+2026-03-05 13:27:48,030 - core.database - DEBUG - [DB_OP] Database session created successfully in 0.0000s
+2026-03-05 13:27:48,031 - routers.auth - INFO - [login] Login attempt for: sonhynmin04@gmail.com
+2026-03-05 13:27:48,660 - routers.auth - WARNING - [login] User not found: sonhynmin04@gmail.com
+2026-03-05 13:27:48,661 - core.database - ERROR - Database session error: 401: Email này chưa được đăng ký. Vui lòng tạo tài khoản mới.
+Traceback (most recent call last):
+  File "D:\ASM1\backend\core\database.py", line 542, in get_db
+    yield session
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\backend\routers\auth.py", line 214, in login
+    raise HTTPException(
+fastapi.exceptions.HTTPException: 401: Email này chưa được đăng ký. Vui lòng tạo tài khoản mới.
+2026-03-05 13:27:48,682 - core.database - DEBUG - [DB_OP] Database session cleanup after 0.6517s
+2026-03-05 13:27:48,783 - core.database - ERROR - Failed to create database session: 401: Email này chưa được đăng ký. Vui lòng tạo tài khoản mới.
+Traceback (most recent call last):
+  File "D:\ASM1\backend\core\database.py", line 542, in get_db
+    yield session
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 301, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\.venv\Lib\site-packages\fastapi\routing.py", line 212, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\ASM1\backend\routers\auth.py", line 214, in login
+    raise HTTPException(
+fastapi.exceptions.HTTPException: 401: Email này chưa được đăng ký. Vui lòng tạo tài khoản mới.
+2026-03-05 13:34:27,270 - services.database - DEBUG - [DB_OP] Starting database close
+2026-03-05 13:34:27,371 - core.database - INFO - Database connection closed and engine disposed
+2026-03-05 13:34:27,371 - services.database - INFO - Database connections closed
+2026-03-05 13:34:27,371 - services.database - DEBUG - [DB_OP] Database close completed in 0.1007s
